@@ -9,7 +9,7 @@ import statistics
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import ROOT, assert_frozen, normalize, answered, quantile_diagnostics, read_json, read_jsonl, score, sha256, write_csv, write_json
+from common import ROOT, assert_frozen, normalize, answered, quantile_diagnostics, read_json, read_jsonl, score, sha256, write_csv, write_json, validate_saved_calls
 from error_schema import review_selection, DEFINITIONS
 
 def percentile(values, q):
@@ -48,9 +48,16 @@ def validate_logs(rows, expected, metadata, frozen, phase='final'):
         raise ValueError('Analysis requires real final inference, not fixtures or pilot')
     if metadata['freeze_sha256'] != sha256(ROOT / 'freeze/freeze.json'):
         raise ValueError('Freeze does not match run')
+    if metadata.get('model_lock') != frozen['model_lock'] or metadata.get('source_hashes') != frozen['source_hashes']:
+        raise ValueError('Run model/source metadata differs from frozen protocol')
     expected_by_id = {x['record_id']: x for x in expected}
     if len({r['record_id'] for r in rows}) != len(rows) or {r['record_id'] for r in rows} != set(expected_by_id):
         raise ValueError('Missing, extra or duplicate calls: do not publish partial results')
+    validate_saved_calls(rows, expected, frozen['model_lock']['revision'], phase)
+    if metadata.get('planned_calls') != len(expected) or metadata.get('input_sha256') != sha256(ROOT/'data/test.jsonl'):
+        raise ValueError('Run dataset metadata differs from the frozen test set')
+    if metadata.get('config') != read_json(ROOT/'config/experiment.json'):
+        raise ValueError('Run configuration differs from the frozen design')
     for row in rows:
         if row.get('error') or row.get('backend') != 'transformers_real_model' or row.get('phase') != phase:
             raise ValueError('Failed or non-final call found')
@@ -144,6 +151,8 @@ def run_analysis(run_directory=None, reproduction=False):
     completion = read_json(run_directory / 'completion.json')
     if completion['raw_sha256'] != sha256(raw_path) or completion['run_status'] != 'complete':
         raise ValueError('Run incomplete or raw log changed after completion')
+    if completion.get('recorded_calls') != len(rows) or completion.get('planned_calls') != len(rows):
+        raise ValueError('Completion counts differ from actual calls')
     out = run_directory / 'analysis' if reproduction else ROOT / 'results/analysis'
     out.mkdir(parents=True, exist_ok=True)
     by_condition = defaultdict(list)

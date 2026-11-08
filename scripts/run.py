@@ -8,17 +8,39 @@ import sys
 import time
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import ROOT, assert_frozen, environment, read_json, read_jsonl, score, sha256, utc_now, write_json
+from common import (ROOT, assert_frozen, environment, read_json, read_jsonl, score, sha256,
+                    utc_now, write_json, source_hashes, validate_saved_calls, runtime_profile, exclusive_run)
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--phase', choices=['pilot', 'final', 'reproduction'], required=True)
-    p.add_argument('--run-id', help='Required for independent reproduction; creates separate logs')
-    p.add_argument('--limit-facts', type=int, default=3, help='Pilot only; ignored for final')
+    p.add_argument('--run-id', help='Pilot/reproduction run folder; mandatory for reproduction')
+    p.add_argument('--limit-facts', type=int, help='Pilot only; default 3 dev facts')
+    p.add_argument('--device', choices=['cpu','cuda'], help='Defaults to config/runtime.json; final must match that file')
     a = p.parse_args()
+    if a.run_id and (not a.run_id.isascii() or not a.run_id.replace('_','').replace('-','').isalnum()):
+        p.error('Run ID must contain only ASCII letters, digits, underscores or hyphens.')
+    if a.phase == 'final' and a.run_id:
+        p.error('Final runs use results/final; preserve the frozen run.')
+    if a.phase == 'reproduction' and not a.run_id:
+        p.error('Reproduction requires --run-id.')
+    if a.limit_facts is not None and (a.phase != 'pilot' or a.limit_facts < 1):
+        p.error('--limit-facts must be positive and is allowed only for pilot.')
+    out = ROOT / 'results' / a.phase
+    if a.run_id:
+        out = out / a.run_id
+    with exclusive_run(out):
+        try:
+            execute(a, out)
+        except KeyboardInterrupt:
+            write_json(out/'interruption.json', {'interrupted_at':utc_now(),
+                'note':'Stopped by user; completed rows retained. Resume using the same command.'})
+            print('\nInterrupted. Completed responses are saved; use the same command to resume.', flush=True)
+            raise SystemExit(130)
+
+
+def execute(a, out):
     config = read_json(ROOT / 'config/experiment.json')
-    if a.phase=='reproduction' and (not a.run_id or not a.run_id.replace('_','').replace('-','').isalnum()):
-        p.error('Reproduction requires a simple --run-id; it never overwrites final logs.')
     frozen = assert_frozen(strict_environment=False) if a.phase=='reproduction' else (assert_frozen() if a.phase == 'final' else None)
     lock = frozen['model_lock'] if frozen else read_json(ROOT / 'config/model_lock.json')
     if lock['model_id'] != config['model_id']:
@@ -26,58 +48,72 @@ def main():
     split = 'dev' if a.phase=='pilot' else 'test'
     rows = read_jsonl(ROOT / f'data/{split}.jsonl')
     if a.phase == 'pilot':
-        ids = sorted({r['fact_id'] for r in rows})[:a.limit_facts]
+        ids = sorted({r['fact_id'] for r in rows})[:(a.limit_facts or 3)]
         rows = [r for r in rows if r['fact_id'] in ids]
-    out = ROOT / 'results' / a.phase
-    if a.phase=='reproduction': out=out/a.run_id
     out.mkdir(parents=True, exist_ok=True)
+    hashes = frozen['source_hashes'] if frozen else source_hashes()
     metadata_path = out / 'metadata.json'
     if metadata_path.exists():
         metadata = read_json(metadata_path)
         if metadata['model_lock']['revision'] != lock['revision'] or metadata['input_sha256'] != sha256(ROOT / f'data/{split}.jsonl'):
             raise ValueError('Cannot resume different model/data in same run directory')
-        if metadata['source_hashes'] != (frozen['source_hashes'] if frozen else {}):
+        if metadata['source_hashes'] != hashes:
             raise ValueError('Source changed since run began')
         if metadata.get('config') != config or metadata['planned_calls'] != len(rows):
             raise ValueError('Configuration or pilot subset changed; preserve the old log and use a separate project copy.')
     if not rows: raise ValueError('No planned calls')
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    profile = runtime_profile(torch, a.device)
+    if a.phase == 'final' and profile['device'] != read_json(ROOT/'config/runtime.json')['device']:
+        raise ValueError('Final device must match the frozen runtime config.')
+    device = profile['device']
     dtype = torch.float16 if device == 'cuda' else torch.float32
-    tokenizer = AutoTokenizer.from_pretrained(lock['model_id'], revision=lock['revision'])
-    model = AutoModelForCausalLM.from_pretrained(lock['model_id'], revision=lock['revision'],
-                                              torch_dtype=dtype, attn_implementation='eager')
-    model.to(device).eval()
     if metadata_path.exists():
         previous = read_json(metadata_path)
-        current_hardware = torch.cuda.get_device_name(0) if device == 'cuda' else 'CPU'
-        if previous['hardware'] != current_hardware or previous['dtype'] != str(dtype):
+        if previous.get('runtime_profile') != profile or previous['environment'] != environment():
             raise ValueError('Cannot mix hardware/precision in a resumed run; preserve original logs and document a separate rerun')
     metadata = {
         'backend': 'transformers_real_model', 'phase': a.phase, 'split': split,
         'config':config,
         'started_at': utc_now(), 'model_lock': lock, 'environment': environment(),
         'device': device, 'dtype': str(dtype),
-        'hardware': torch.cuda.get_device_name(0) if device == 'cuda' else 'CPU',
+        'hardware':profile['hardware'], 'runtime_profile':profile,
         'input_sha256': sha256(ROOT / f'data/{split}.jsonl'),
-        'planned_calls': len(rows), 'source_hashes': frozen['source_hashes'] if frozen else {},
+        'planned_calls': len(rows), 'source_hashes':hashes,
         'freeze_sha256': sha256(ROOT / 'freeze/freeze.json') if frozen else None,
         'reproduction_environment_comparison':{'original':frozen['environment'],'current':environment()} if a.phase=='reproduction' else None,
         'latency_note': 'Single-item generation; first generation is a discarded warm-up; timings depend on hardware/load',
     }
+    raw_path = out / 'raw.jsonl'
+    if raw_path.exists() and not metadata_path.exists():
+        raise ValueError('Raw log has no metadata. Preserve it; do not attach new metadata to old answers.')
+    existing = read_jsonl(raw_path) if raw_path.exists() else []
+    done = validate_saved_calls(existing, rows, lock['revision'], a.phase)
+    if len(done) == len(rows):
+        completion_path = out/'completion.json'
+        if completion_path.exists():
+            completion = read_json(completion_path)
+            if completion['raw_sha256'] != sha256(raw_path) or completion['run_status'] != 'complete':
+                raise ValueError('Completed log changed; preserve and investigate instead of resealing it.')
+        else:
+            write_json(completion_path, {'finished_at':utc_now(), 'completion_recovered':True,
+                'note':'All calls were present after interruption; this time records completion verification.',
+                'recorded_calls':len(done),'planned_calls':len(rows),
+                'raw_sha256':sha256(raw_path),'run_status':'complete'})
+        print(f'All {len(done)} calls already recorded; no model calls made.')
+        return
+    print(f'Loading {lock["model_id"]} on {profile["hardware"]}; threads={profile["num_threads"]}',flush=True)
+    tokenizer = AutoTokenizer.from_pretrained(lock['model_id'], revision=lock['revision'])
+    model = AutoModelForCausalLM.from_pretrained(lock['model_id'], revision=lock['revision'],
+                                              torch_dtype=dtype, attn_implementation=profile['attention'])
+    model.to(device).eval()
     if not metadata_path.exists():
         write_json(metadata_path, metadata)
-    raw_path = out / 'raw.jsonl'
-    existing = read_jsonl(raw_path) if raw_path.exists() else []
-    done = {r['record_id'] for r in existing}
-    if len(done) != len(existing):
-        raise ValueError('Duplicate records in existing log')
-    if not done.issubset({r['record_id'] for r in rows}):
-        raise ValueError('Unplanned records found in resumed log')
-    if any(r.get('error') for r in existing):
-        raise ValueError('Earlier failures are preserved. Record deviation and use a separate versioned run for rerun.')
-    random.Random(952).shuffle(rows)  # interleave conditions; same schedule on reproduction
+    random.Random(profile['schedule_seed']).shuffle(rows)
+    started = time.perf_counter()
+    initial_done = len(done)
+    print(f'{a.phase}: {len(done)}/{len(rows)} already saved; {len(rows)-len(done)} remaining.',flush=True)
     with torch.inference_mode():
         for warmup, row in [(True, rows[0])] + [(False, r) for r in rows if r['record_id'] not in done]:
             torch.manual_seed(row['seed'])
@@ -110,17 +146,22 @@ def main():
                              reached_token_limit=(len(tokens) == config['max_new_tokens']))
             except Exception as exc:
                 entry['error'] = f'{type(exc).__name__}: {exc}'
-                if warmup: raise
+                if warmup:
+                    write_json(out/f'warmup_failure_{time.time_ns()}.json',entry)
+                    raise
             if not warmup:
                 with raw_path.open('a', encoding='utf-8') as f:
                     f.write(json.dumps(entry, ensure_ascii=False) + '\n')
                     f.flush()
-                if len(done) % 50 == 0:
-                    print(f'{len(done)} previous/completed calls; recording {row["record_id"]}', flush=True)
                 done.add(row['record_id'])
+                if len(done) == initial_done + 1 or len(done) % 25 == 0 or len(done) == len(rows):
+                    elapsed = time.perf_counter()-started
+                    eta = elapsed/(len(done)-initial_done)*(len(rows)-len(done))
+                    print(f'{len(done)}/{len(rows)} ({len(done)/len(rows):.1%}); remaining about {eta/60:.1f} min',flush=True)
                 if entry['error']:
                     raise RuntimeError('Call failed and was logged. Do not silently drop it.')
     complete = read_jsonl(raw_path)
+    validate_saved_calls(complete, rows, lock['revision'], a.phase)
     write_json(out / 'completion.json', {'finished_at': utc_now(), 'recorded_calls': len(complete),
         'planned_calls': len(rows), 'raw_sha256': sha256(raw_path),
         'run_status': 'complete' if len(complete) == len(rows) else 'incomplete'})

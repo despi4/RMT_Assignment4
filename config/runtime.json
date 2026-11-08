@@ -1,0 +1,6 @@
+{
+  "device": "cpu",
+  "num_threads": 2,
+  "attention": "eager",
+  "schedule_seed": 952
+}

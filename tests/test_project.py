@@ -140,7 +140,8 @@ class ProjectTests(unittest.TestCase):
             raw.write_text(''.join(json.dumps(r)+'\n' for r in rows),encoding='utf-8')
             (root/'data/test.jsonl').write_text(''.join(json.dumps(r)+'\n' for r in sample),encoding='utf-8')
             write_json(root/'results/final/metadata.json',{'TEST_FIXTURE':True})
-            write_json(root/'results/final/completion.json',{'raw_sha256':sha256(raw),'run_status':'complete'})
+            write_json(root/'results/final/completion.json',{'raw_sha256':sha256(raw),'run_status':'complete',
+                'recorded_calls':len(rows),'planned_calls':len(rows)})
             with patch.object(analyze,'ROOT',root), patch.object(analyze,'assert_frozen',return_value={}), patch.object(analyze,'validate_logs'):
                 analyze.run_analysis()
             import csv,xml.etree.ElementTree as ET

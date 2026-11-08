@@ -25,10 +25,14 @@ Supplementary empirical question: How do distractor quantity, distractor type, a
 
 Suggested report subtitle: A controlled follow-up on contextual factual accuracy and distracting evidence.
 
+## Implementation update before final inference
+
+The team reports that Appendix A was uploaded. Later technical fixes are recorded in docs/IMPLEMENTATION_UPDATE.json. Preserve the original uploaded document and real receipt. Include the update and source commit in Deviations from the frozen protocol; do not overwrite an existing freeze. The selected runtime is CPU float32, two threads, eager attention, schedule seed 952 (config/runtime.json). The model, stimuli, seeds, metrics and statistical design remain as in the uploaded form.
+
 ## Decisions to freeze
 
-Students and group: [complete; maximum two students under the supplied assignment rules].
-Instructor approval reference and exact scope: [complete].
+Students and group: Madiuly Almadi, Aibek Galymbekov, Aidyn Zhubanyshev; SE-2417. The team reports instructor permission for three students.
+Instructor approval and scope: the team reports permission for the supplementary experiment and a three-student group. No dated written reference has been supplied.
 Model: Qwen/Qwen2.5-0.5B-Instruct, immutable revision from config/model_lock.json. Instruction-tuned checkpoint; "closed_book" means no supplied facts, not an untrained model. All conditions use the SAME checkpoint with no parameter updates.
 
 Data: data version 1.0. 30 development facts and 120 test facts, all fictional countries/cities generated with seed 2417. English prompts; three question forms balanced across facts. No humans or personal data. Every test fact is present in its supported contexts, but no test entity-answer association appears in a development prompt. Questions, contexts, and answers have an auditable source in data/facts.json. Fictional random mappings reduce prior factual knowledge; zero prior exposure cannot be proven for arbitrary name fragments.

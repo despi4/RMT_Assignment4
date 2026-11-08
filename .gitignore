@@ -4,10 +4,13 @@ __pycache__/
 *.token
 .env
 .test_tmp/
+results/**/.run.lock
+results/**/interruption.json
 results/pilot/
 # Keep final raw logs, freeze manifests and analysis outputs in the release.
 
 freeze/moodle_upload*
+freeze/protocol_document*
 
 # Reports and personal submission documents stay outside this code repository.
 *.docx

@@ -1,0 +1,16 @@
+{
+  "status": "Implementation update after team-reported Appendix A upload; no final inference has started",
+  "base_commit": "5d4e4051f35c206ed11474499dfed8dcc3c93de5",
+  "reason": "Make the chosen CPU workflow explicit and improve preparation, resume validation and operational instructions",
+  "changes": [
+    "Explicit CPU runtime profile with two threads and float32; eager attention and schedule seed 952 retained",
+    "Preparation preserves the immutable checkpoint rather than resolving latest again",
+    "Resume checks saved stimuli, responses, scores, token counts and environment before inference",
+    "Progress, interruption records and concurrent-run protection",
+    "CPU launcher, preflight checks, public freeze export and documentation"
+  ],
+  "scientific_design": "Unchanged: model revision, data hashes, prompts, seven conditions, three context seeds, metrics, H1-H3 and statistical plan",
+  "final_test_outcomes_seen": false,
+  "instructor_approval_for_this_update": "No separate approval reference supplied; include this record in Deviations from the frozen protocol and follow course rules",
+  "action_before_final_run": "Retain the original Appendix A and its real upload receipt; document this implementation update and its code commit. Do not fabricate a new upload date or overwrite an existing freeze."
+}

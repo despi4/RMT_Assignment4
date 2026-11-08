@@ -1,0 +1,8 @@
+{
+  "scope": "Real development smoke test of the updated CPU runner; not final inference",
+  "calls": 63,
+  "technical_errors": 0,
+  "max_input_tokens": 342,
+  "output_limit_hits": 0,
+  "raw_sha256": "3c7f898386f078df7ee5592dd20549a278bb1750287de90c1d1dcd26a2f9e2af"
+}

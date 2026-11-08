@@ -1,0 +1,126 @@
+{
+  "backend": "transformers_real_model",
+  "phase": "pilot",
+  "split": "dev",
+  "config": {
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "dataset_seed": 2417,
+    "dev_facts": 30,
+    "test_facts": 120,
+    "context_seeds": [
+      17,
+      29,
+      43
+    ],
+    "conditions": [
+      "closed_book",
+      "clean",
+      "irrelevant_4",
+      "similar_4",
+      "irrelevant_16",
+      "similar_16",
+      "target_absent_16"
+    ],
+    "max_new_tokens": 16,
+    "max_input_tokens": 2048,
+    "do_sample": false,
+    "bootstrap_samples": 4000,
+    "permutation_samples": 10000,
+    "analysis_seed": 7341,
+    "primary_comparison": [
+      "similar_16",
+      "clean"
+    ],
+    "planned_comparisons": [
+      [
+        "similar_16",
+        "clean"
+      ],
+      [
+        "clean",
+        "closed_book"
+      ],
+      [
+        "similar_16",
+        "irrelevant_16"
+      ]
+    ],
+    "system_prompt": "Answer the question using the supplied context. The countries and cities are fictional. If the context does not state the answer, output UNKNOWN. Output only the city name or UNKNOWN, with no explanation."
+  },
+  "started_at": "2026-11-08T18:02:56.763783+00:00",
+  "model_lock": {
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "resolved_at": "2026-11-08T15:36:25.539478+00:00",
+    "environment": {
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "packages": {
+        "torch": "2.15.0+cpu",
+        "transformers": "4.57.1",
+        "huggingface-hub": "0.36.2",
+        "safetensors": "0.8.0",
+        "tokenizers": "0.22.2",
+        "numpy": "2.5.4"
+      }
+    }
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "torch": "2.15.0+cpu",
+      "transformers": "4.57.1",
+      "huggingface-hub": "0.36.2",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.22.2",
+      "numpy": "2.5.4"
+    }
+  },
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "hardware": "13th Gen Intel(R) Core(TM) i5-13450HX",
+  "runtime_profile": {
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "hardware": "13th Gen Intel(R) Core(TM) i5-13450HX",
+    "num_threads": 2,
+    "attention": "eager",
+    "schedule_seed": 952
+  },
+  "input_sha256": "121138c4bac1b01798387e09cbc1ee75c59d4e41309d7cd5fd525655b5a16c7a",
+  "planned_calls": 63,
+  "source_hashes": {
+    "config/experiment.json": "53c9be903e31284d9ceecc5353355bf895361eaa03a6dc5e6e722616e5011e8b",
+    "config/runtime.json": "66d5c6be152c81ac75d85e0ac172df724c75d96d44ad65557206eb314334e937",
+    "data/dev.jsonl": "121138c4bac1b01798387e09cbc1ee75c59d4e41309d7cd5fd525655b5a16c7a",
+    "data/facts.json": "1d4c20c8d5c8ad143c2586798f1dc53686c4a860ad388f4bbb07e5613ec0943b",
+    "data/manifest.json": "a37ea4ac7326694bfe3d95df9c0d7919f2e75bec1026cbf2146dd1f9f2bf4a00",
+    "data/test.jsonl": "958be00e198cf90914097b46f67ea0fd7af9f5c1bc4cc502d90a11fd7f8445d2",
+    "docs/IMPLEMENTATION_UPDATE.json": "41ae0ce04f678f3508694dcade06a8a9f748b4fca1921289a5dcc887b9a77dd1",
+    "docs/PROTOCOL.md": "acc09c1ebab5954c164a3503aa52f7d790d555d85daaa11823e1f1e48a802e8e",
+    "environment.lock.txt": "dd41372a8ad12f11f00dd54a17ebaca71d63d0de8767c72e322d84508af4540d",
+    "experiment.ps1": "31f664e65d269c599b4beb4218d26fd1f0c08d30aa4061ece0db9a02b740d26c",
+    "prior_work/CODEBOOK.md": "88013407a8434b3ff244834b82f0d6ec757d3fa5204bbaab6af606d6454cb532",
+    "prior_work/data/results.csv": "06960dacd7735af77da6cd5ae900ebdbdbd5ce3ccaeb65e75730af346831571d",
+    "prior_work/pipeline.py": "afd900e15153733030ec23278e12a2927ebca34f27d2ce41a40184e043c0bcc3",
+    "requirements-cpu.txt": "b282c2682e614e149b07eaafde4b30480d1e038cb4ee81ab6f8cf0fa0bd91122",
+    "requirements.txt": "379b76ddfadf52c465eebccf3ee5f68babdaf075a1109a8eae680ef2c742c3d1",
+    "scripts/analyze.py": "c0641c96bf8bdcdf616526b1206cfcab5560e836408d91a5eea423fe0380ff1f",
+    "scripts/common.py": "02e32e26b1d6282cb0ebd6de89b2b4fd884f42fe52777b4ea1830e966f2410ce",
+    "scripts/compare_reproduction.py": "7ab3d67cb9bb666d44eeab455f6fe2a51d7a8f206755d7aece95d57c0692feda",
+    "scripts/error_schema.py": "46fefaa7009b2d6e468a55e2c958f025f05164a2e33d7bce4cdf2b97d6ad3e57",
+    "scripts/export_package.py": "c5c89625294a7213f254d5c3bd19d20e93bf8fcd64da13d396c6d401f820ee51",
+    "scripts/freeze.py": "fc54f07f5f2fddd981b6fa5028fb1461fa3147b55450a707c7a5e521483db7a9",
+    "scripts/make_data.py": "ea0925299c66c31b560f0a78bf6a07b072ffc40dc87600fee283d9a3132ce588",
+    "scripts/prepare.py": "2adeb201bf43cd5c8c65145d70b626b95160176dcb8350cbd449f1aa7398cbd4",
+    "scripts/review_errors.py": "adac9331c16de56490bc80fc81170c101b005f71ed20de975093ec9367045bf9",
+    "scripts/run.py": "1a55f09362ea17cb5d80bb24b31b460f30d897ef41fc3f46af612a4d9031c666",
+    "scripts/status.py": "62ca337956ff57fb6b390e0a1c00abf5ed375fa4e32f7e921cbb40fef7cd772d",
+    "scripts/submission_check.py": "9496bd853ef62cc14b9d094eaf072b2722cf2bc79f04fd741374647ecadc57bf",
+    "scripts/trace_number.py": "09d138cb391febdd9e2331d2937735ee70f3d1f9fc0a12b248ed64650a18460e"
+  },
+  "freeze_sha256": null,
+  "reproduction_environment_comparison": null,
+  "latency_note": "Single-item generation; first generation is a discarded warm-up; timings depend on hardware/load"
+}

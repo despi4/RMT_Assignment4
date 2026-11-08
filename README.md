@@ -1,112 +1,150 @@
 # RMT Assignment 4
 
-**Код и данные эксперимента о влиянии отвлекающего контекста на точность LLM. Отчёт не включён.**
+Исследуем, как отвлекающие факты мешают небольшой LLM использовать новые сведения из текста. Основной вариант запуска — Windows, CPU, два потока. Обучения весов и платного API нет.
 
-[Открыть в Google Colab](https://colab.research.google.com/github/despi4/RMT_Assignment4/blob/main/Run_in_Colab.ipynb) · [Порядок действий](START_HERE_RU.txt) · [Протокол](docs/PROTOCOL.md)
+Модель: `Qwen/Qwen2.5-0.5B-Instruct`, фиксированный checkpoint `7ae557604adf67be50417f59c2c2f167def9a775`. Отчёт в этот репозиторий не включён.
 
-Проверено: 19 программных тестов и 63 настоящих dev-ответа Qwen. Финальный эксперимент: 120 фактов × 7 условий × 3 конфигурации контекста = 2520 ответов; он выполняется после загрузки протокола в Moodle.
+## Что делает программа
 
-## Technical instructions
+Для каждого вымышленного государства программа задаёт вопрос о столице в семи условиях. Ответ модели сравнивается с сохранённым правильным ответом. У каждой попытки сохраняются вопрос, контекст, ответ, токены, время, checkpoint и идентификатор.
 
-This package adds a controlled factual-QA experiment to Assignment 3's literature synthesis. It studies context use, supporting Objective 4, without rerunning fine-tuning. No final LLM results are supplied or fabricated. Nineteen software tests passed. A real 63-call CPU development smoke test is preserved in validation/dev_smoke_63; this is not final test evidence.
+| Условие | Что получает модель |
+|---|---|
+| closed_book | Вопрос без подсказки — простой baseline |
+| clean | Один правильный факт — сильный oracle-context baseline |
+| irrelevant_4 / irrelevant_16 | Правильный факт и 4 / 16 фактов об озёрах |
+| similar_4 / similar_16 | Правильный факт и 4 / 16 столиц других государств |
+| target_absent_16 | Только чужие факты; правильная реакция — UNKNOWN |
 
-[Open the notebook in Google Colab](https://colab.research.google.com/github/despi4/RMT_Assignment4/blob/main/Run_in_Colab.ipynb). Start with `START_HERE_RU.txt`. The first notebook cell clones this repository automatically. Select a GPU runtime. Run the notebook in order. Keep a backup of the project after long runs because Colab sessions can disconnect. A small model is used for feasibility; null or mixed results are valid.
+Данные уже созданы: **30 dev-фактов** для разработки и **120 test-фактов** для финального исследования. Три seeds (17, 29, 43) меняют отвлекающие факты и позицию нужного предложения. Это три варианта контекста, а не три обучения. Декодирование greedy. Полный эксперимент: **120 × 7 × 3 = 2520 ответов**.
 
-## Package contents
+Главная метрика — точное совпадение с правильным названием города. Корректный UNKNOWN учитывается отдельно: он показывает воздержание, а не знание столицы. Анализ считает mean/SD, парные 95% bootstrap CI по 120 fact clusters, sign-flip permutation tests, поправку Holm и различия в процентных пунктах. Схема исследования и связь с Assignment 3 описаны в [протоколе](docs/PROTOCOL.md) и [матрице преемственности](docs/CONTINUITY.md).
 
-- config/experiment.json: fixed design, prompts, model and analysis settings.
-- data/: 30 dev facts, 120 final facts, 630 dev stimuli and 2520 final stimuli; fictional stimuli, NOT model predictions.
-- scripts/: generation, preparation, freezing, inference, paired analysis and manual error review.
-- tests/: invariants, scoring and statistical checks; artificial test fixtures are not research observations.
-- docs/PROTOCOL.md: prospective freeze content; transfer it into the required Appendix A submission form.
-- docs/CONTINUITY.md, CRITERIA_AUDIT.csv and DEFENCE_RU.txt: continuity, requirement audit and defence preparation.
-- results/software_test_log.txt: software checks only. Real model outputs will appear in results/final/.
+## Быстрый запуск на новом Windows компьютере
 
-## Installation
+Нужны Git, Python 3.12 и PowerShell. Откройте PowerShell в папке для проекта:
 
-Use Python 3.11 or 3.12 and a virtual environment, or Colab. For a GPU, use an environment whose installed PyTorch supports that GPU. Internet is needed for dependencies and the public model download. No paid API or API key is required for this public checkpoint.
+```powershell
+git clone https://github.com/despi4/RMT_Assignment4.git
+cd RMT_Assignment4
+.\experiment.ps1 setup
+.\experiment.ps1 check
+.\experiment.ps1 pilot
+```
 
-```bash
-python -m pip install -r requirements.txt
+`setup` создаёт `.venv`, устанавливает CPU-зависимости и скачивает именно выбранный checkpoint. Интернет нужен для этой установки. Модель занимает около 1 ГБ на диске; зависимости и окружение требуют дополнительного места. Первый запуск загружает веса в память. Проверенная машина: i5-13450HX, 16 ГБ RAM, Windows 11, Python 3.12.14, torch 2.15.0+cpu.
+
+`check` проверяет хеши данных, версии, runtime, наличие весов и запускает программные тесты. `pilot` делает **63 настоящих dev-вызова**, сохраняя их в `results/pilot/cpu_smoke_verified/`. Для нового dev-запуска используйте новое имя: `.\experiment.ps1 pilot -RunId another_dev_check`. Нельзя менять лимит или исходники в уже начатом запуске. Существующий лог продолжается только при совпадении кода, данных и среды.
+
+Если PowerShell блокирует запуск `.ps1`, используйте Python-команды из раздела ниже; менять системную политику выполнения не требуется.
+
+## Уже установленная среда
+
+Повторная установка не нужна. Перед командами задайте пути к существующим Python и кэшу:
+
+```powershell
+$env:RMT_PYTHON = 'C:\полный\путь\к\python.exe'
+$env:HF_HOME = 'C:\полный\путь\к\кэшу_модели'
+.\experiment.ps1 check
+.\experiment.ps1 pilot
+```
+
+Переменная `RMT_PYTHON` используется только launcher. Прямые Python-команды вызывайте тем же интерпретатором, например `& $env:RMT_PYTHON scripts/status.py`.
+
+## Перед финальным запуском
+
+Вы сообщили, что Appendix A загружен. Сохраните **точный загруженный документ**, настоящий screenshot/receipt и дату со временем и timezone из Moodle. Код не проверяет подлинность Moodle: это декларация студента, которую преподаватель может сверить с сайтом.
+
+После первоначальной версии кода сделаны технические исправления. Их запись — [IMPLEMENTATION_UPDATE.json](docs/IMPLEMENTATION_UPDATE.json). Модель, данные, prompts, условия, гипотезы и статистический план сохранены. Отразите обновление и commit в разделе **Deviations from the frozen protocol**, сохраните исходный Appendix A. Если преподаватель требует повторной загрузки технического дополнения, сделайте её до final. Программа не заявляет, что такое дополнение уже загружено или согласовано.
+
+Используйте настоящие значения вместо обозначений в угловых скобках:
+
+```powershell
+.\experiment.ps1 freeze -UploadedAt '<ISO дата и время с +05:00>' -Evidence 'C:\путь\receipt.png' -Protocol 'C:\путь\Appendix_A_Completed.docx' -Declarant '<имя загрузившего студента>'
+.\experiment.ps1 final
+.\experiment.ps1 analyze
+```
+
+`freeze` сохраняет хеши исходников, данных, настроек, environment, документа и receipt. Это не загрузка в Moodle. До freeze команда `final` заблокирована. Существующий freeze не перезаписывается. При новом компьютере до freeze выполните `prepare.py`, проверьте среду, сделайте dev pilot и отразите реальные версии в протоколе.
+
+`final` запускает все 2520 вызовов на **CPU float32, 2 потока, eager attention**. Показывает число готовых ответов и приблизительное оставшееся время. Не выключайте компьютер; продолжительность зависит от нагрузки. Для паузы нажмите **Ctrl+C**, для продолжения выполните ту же команду. Уже сохранённые строки не генерируются повторно. Завершённый запуск повторная команда не пересчитывает. Ошибочный вызов сохраняется и останавливает запуск: такой лог нельзя удалять ради улучшения результата. Повреждённая/обрезанная строка после аварии также требует сохранения исходного лога и документированного исправления, а не удаления наблюдений.
+
+Узнать состояние без генерации ответов: `.\experiment.ps1 status`.
+
+## Какие файлы появятся
+
+| Файл | Назначение |
+|---|---|
+| results/final/raw.jsonl | Все реальные финальные ответы, токены, latency и stimuli |
+| results/final/metadata.json | Модель, CPU, precision, потоки, версии и хеши |
+| results/final/completion.json | Число вызовов и SHA256 завершённого лога |
+| results/analysis/main_results.csv | Главная таблица метрик по семи условиям |
+| results/analysis/per_seed.csv | Точность каждого из трёх context seeds |
+| results/analysis/paired_comparisons.csv | Различия, парные CI, p-value и Holm |
+| results/analysis/hypothesis_decisions.csv | Решение по H1–H3 |
+| results/analysis/figure_1_accuracy.svg | Сравнение точности и CI |
+| results/analysis/figure_2_noise.svg | Зависимость от 0 / 4 / 16 distractors |
+| results/analysis/figure_3_position.svg | Положение факта, описательный анализ |
+| results/analysis/figure_4_answerability.svg | Confusion matrix наличия ответа, не правильности города |
+| results/analysis/error_review.csv | Реальные ошибки для ручного Appendix B |
+| results/analysis/audit_rows.csv | Цепочка от таблицы до каждого ответа |
+
+`analyze` не генерирует результаты модели: он проверяет полный реальный лог и вычисляет статистику. Неполные/подменённые/pilot логи отклоняются. При повторном анализе введённые людьми метки в `error_review.csv` сохраняются.
+
+## Ручной Appendix B
+
+Откройте `error_review.csv`. Два участника независимо заполняют `rater_1` и `rater_2`; после обсуждения — `final_category` и конкретное объяснение в `explanation`. Определения категорий находятся в `scripts/error_schema.py`. Не меняйте вопросы, ответы или состав выбранных случаев. Разбираются 30 ошибок либо все, если их меньше. Далее:
+
+```powershell
+& $env:RMT_PYTHON scripts/review_errors.py --rater-1-name '<первый участник>' --rater-2-name '<второй участник>'
+```
+
+При `.venv` вместо `& $env:RMT_PYTHON` используйте `.\.venv\Scripts\python.exe`. Появятся `error_summary.csv` и `error_review_status.json` с подсчётами и согласованностью. Код не подставляет человеческие метки.
+
+## Независимое воспроизведение и Appendix C
+
+После финального запуска другой участник берёт тот же commit, данные, config, `freeze/freeze.json`, исходные финальные результаты и `environment.lock.txt`, создаёт отдельную чистую среду и выполняет:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --extra-index-url https://download.pytorch.org/whl/cpu -r environment.lock.txt
+.\.venv\Scripts\python.exe scripts/run.py --phase reproduction --run-id independent_1
+.\.venv\Scripts\python.exe scripts/analyze.py --reproduction-id independent_1
+.\.venv\Scripts\python.exe scripts/compare_reproduction.py --run-id independent_1 --person '<реальный исполнитель>' --commit '<проверяемый commit>' --notes '<реальные различия и исправления инструкции>'
+```
+
+Не запускайте `prepare.py` или новый freeze поверх исходного воспроизводимого пакета. Режим reproduction использует исходный freeze, сохраняет новые логи отдельно и записывает различия среды. Чужой private receipt для reproduction не нужен. Совпадение названий CPU не гарантирует идентичное железо; запишите настоящую машину в Appendix C. Для GPU нужен явный `--device cuda` и описание изменения среды; это отдельное условие воспроизведения, а не скрытая замена исходного CPU-эксперимента.
+
+## Python команды без launcher
+
+```powershell
+python scripts/prepare.py --download
+python scripts/status.py
 python -m unittest discover -s tests -v
-python scripts/prepare.py
-python scripts/run.py --phase pilot --limit-facts 3
-```
-
-Pilot uses development data only. For a full development check, set `--limit-facts 30` (630 calls). Adjust settings using dev only, document decisions, rerun tests/prepare, then upload the completed protocol. Do not change code or install different packages after freezing.
-
-## Freeze before final inference
-
-The course requires a Moodle timestamp before final runs. Complete Appendix A, add the real checkpoint SHA, hardware, package versions and dataset manifest hashes; upload it and save the actual receipt. Then run, substituting your true details:
-
-```bash
-python scripts/freeze.py --uploaded-at "ACTUAL_ISO_TIMESTAMP_WITH_TIMEZONE" --evidence "path/to/actual_moodle_receipt.png" --declarant "YOUR NAME"
-```
-
-The timestamp is declared by the student; instructor verification still uses Moodle. This command never manufactures a receipt. It seals the code, configuration, dataset and actual environment. There is no override in the final runner.
-
-## Execute and analyze
-
-```bash
+python scripts/run.py --phase pilot --limit-facts 3 --run-id cpu_smoke_verified
+python scripts/freeze.py --uploaded-at '<ISO с timezone>' --evidence '<receipt>' --protocol '<Appendix A>' --declarant '<имя>'
 python scripts/run.py --phase final
 python scripts/analyze.py
-```
-
-Final inference makes 2520 calls. It appends raw responses and can resume an interruption when existing rows are complete. Failed calls remain in the log and stop execution; see the protocol for an explicitly versioned rerun. Do not erase failures.
-
-Analysis exports main_results.csv, per_seed.csv, paired_comparisons.csv, subgroups.csv, answerability_confusion.csv, audit_rows.csv, four standalone SVG figures and error_review.csv. A completed raw log is mandatory; analysis rejects pilot and fixture backends. Exact model call compatibility and GPU feasibility still need the real development run in your runtime.
-
-The PRIMARY metric is actual gold-city recall for ALL conditions, including closed_book. expected_response_accuracy_pct is a SECONDARY instruction/abstention metric: a correct UNKNOWN is expected in absent-evidence controls but does not mean the model knew the city.
-
-## Human error review
-
-Two students label all sampled errors independently in error_review.csv, adjudicate final_category and provide a case-specific explanation. Preserve the original separate labels. Then run:
-
-```bash
-python scripts/review_errors.py --rater-1-name "ACTUAL FIRST RATER" --rater-2-name "ACTUAL SECOND RATER"
-```
-
-Generated categories/counts are not invented by the program. Full error review and interpretation remain human work.
-
-## Finish the report and reproduce
-
-Prepare your separate Word report using the real generated tables and readable SVG figures. The report is intentionally outside this code repository. Write 1800-2500 words of Results/Discussion as specified in the assignment, not a padded description of Python. Mark H1-H3 honestly, compare at least three studies from Assignment 1 (verify they were actually in Assignment 1; that document was not provided), and explain specific limitations. The four papers in docs/REFERENCES.txt are verified primary sources; three also occur in supplied Assignment 3.
-
-Keep Assignment 3's reviewed FT/RAG evidence separately. Its original code/data archive was located and included in prior_work. The 30 input rows and 14 contrasts were recomputed, 12 original tests passed, and numeric cell matches are recorded in prior_work/recomputed/source_cell_check.csv. This package cannot manufacture the missing common/rare category coverage.
-
-For independent reproduction, copy the frozen release to a new folder or clean runtime, preserve/copy the original final logs elsewhere, then run the same commands. The strict environment check is intentional. If hardware or dependency versions differ, document this as a reproduction deviation and compare discrepancies. Complete Appendix C with the actual second person's actions; do not prefill a successful outcome.
-
-Create your own GitHub/GitLab repository, include code, data, actual logs, readable figures, environment lock and completed appendices, then:
-
-```bash
-git add .
-git commit -m "Complete Assignment 4 reproducible experiment"
-git tag assignment-4
-git push origin HEAD
-git push origin assignment-4
-```
-
-Publish only after checking for API keys, passwords and personal receipt data. This repository contains code and supporting evidence; it is not a completed Moodle submission. The assignment-4 release tag should be created after actual final results and independent reproduction are included. The assignment says max two students; the old report lists three. Resolve team membership with the instructor. Its scoring text also conflicts (10+10 out of 20 versus a final 20/80 line); confirm the applicable weights.
-
-## Limits of the study
-
-This is controlled supplied context, an oracle/controlled-retrieval approximation. It does not implement or benchmark a search engine, prove training exposure, update model weights or demonstrate permanent acquisition of knowledge. Data are synthetic, one model and one language. Longer contexts differ from clean contexts in both length and irrelevant content. Source matching in distractor-type contrasts is approximate. The positions are counterbalanced, but associated context samples change. Tests are paired over fact clusters; 2520 calls are not 2520 independent facts.
-
-Software is MIT licensed; the synthetic dataset is CC0 (see DATA_LICENSE). Original assignments and published articles retain their original rights. Qwen model weights are downloaded under the model's own license, not redistributed here. Declare AI assistance in code, stimuli and writing according to course policy; students verify all content and results.
-
-## Independent reproduction without overwriting results
-
-In a clean environment, install the locked dependencies and obtain the same source/data/freeze. The reproduction mode keeps the original final results intact and explicitly records environment differences. It is not permission to retune the model.
-
-```bash
-python scripts/run.py --phase reproduction --run-id independent_1
-python scripts/analyze.py --reproduction-id independent_1
-python scripts/compare_reproduction.py --run-id independent_1 --person "ACTUAL REPRODUCER" --commit "ACTUAL COMMIT" --notes "Actual differences and README fixes"
+python scripts/trace_number.py --condition similar_16
 python scripts/submission_check.py
 ```
 
-For oral defence, trace an accuracy with `python scripts/trace_number.py --condition similar_16` and optionally `--record-id ACTUAL_ID`.
+Эти команды вызывайте в выбранной среде. Для Python-команд интернет после скачивания весов можно отключить через `$env:HF_HUB_OFFLINE='1'`. Не включайте offline до установки/скачивания. Optional notebook [Run_in_Colab.ipynb](Run_in_Colab.ipynb) использует другую среду и не является выбранным локальным CPU-запуском; фиксируйте её отдельно.
 
-## Previous study reproduction
+## Что сдавать и что остаётся человеку
 
-`prior_work` is the original Assignment 3 project, with its original files preserved. `prior_work/recomputed` contains the actual rerun (30 input rows, 14 contrasts, 12 passing tests) and a 30-cell numerical cross-check against the source tables. These are published-study observations, NOT new Qwen observations. Never merge their accuracy values into the synthetic experiment.
+Итоговый Word report включает Results/Discussion (1800–2500 слов), обоснование baseline, выводы по RQ, сравнение с тремя фактическими источниками из Assignment 1, ограничения и Appendix A–C. Ни отчёт, ни независимость другого студента не возникают автоматически. Original Assignment 1 ещё не предоставлен; принадлежность трёх статей к нему нужно подтвердить.
+
+Эксперимент продолжает Objective 4 из Assignment 3. Исходные FT/RAG данные и повторный анализ находятся в `prior_work`; их нельзя усреднять с новыми Qwen результатами. Этот эксперимент исследует использование supplied context при неизменных весах. Он не доказывает постоянное усвоение знаний, не обучает модель и не тестирует настоящий поисковый retriever. Общие и редкие реальные факты покрываются прежним обзором, не синтетическим экспериментом.
+
+Команда из трёх человек и добавление эксперимента разрешены преподавателем по сообщению команды; отдельная письменная ссылка на разрешение не предоставлена. В задании противоречат веса защиты и письменной части — уточните применяемую схему у преподавателя.
+
+После реальных результатов, ручного анализа и независимого воспроизведения опубликуйте код, данные, логи, таблицы, figures и tag/release `assignment-4`. Сейчас этот тег не создан. Персональные receipts, Appendix A DOCX и report в GitHub не включаются.
+
+Публичный пакет без private receipts и report:
+
+```powershell
+.\experiment.ps1 export -Output 'C:\путь\Assignment4_public_package.zip'
+```
+
+Оригиналы receipts и загруженного протокола храните отдельно и приватно. Software: MIT; synthetic dataset: CC0. Предыдущие работы и статьи сохраняют права авторов; веса Qwen не распространяются этим репозиторием. Укажите AI assistance по правилам курса и проверьте содержание работы самостоятельно.

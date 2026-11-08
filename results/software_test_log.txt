@@ -1,6 +1,13 @@
-SOFTWARE TESTS ONLY; artificial fixtures are not experimental results.
+All 63 calls already recorded; no model calls made.
 Computed complete results. Manually review error_review.csv and write Discussion.
-
+test_completed_resume_skips_loading_model_and_keeps_completion_bytes (test_execution.ExecutionTests.test_completed_resume_skips_loading_model_and_keeps_completion_bytes) ... ok
+test_final_without_freeze_fails_before_inference (test_execution.ExecutionTests.test_final_without_freeze_fails_before_inference) ... ok
+test_os_lock_prevents_two_writers_and_releases_after_interruption (test_execution.ExecutionTests.test_os_lock_prevents_two_writers_and_releases_after_interruption) ... ok
+test_preparation_preserves_checkpoint_without_querying_latest (test_execution.ExecutionTests.test_preparation_preserves_checkpoint_without_querying_latest) ... ok
+test_reproduction_can_use_public_freeze_but_final_requires_private_receipt (test_execution.ExecutionTests.test_reproduction_can_use_public_freeze_but_final_requires_private_receipt) ... ok
+test_resume_rejects_changed_stimulus_score_and_token_evidence (test_execution.ExecutionTests.test_resume_rejects_changed_stimulus_score_and_token_evidence) ... ok
+test_resume_rejects_duplicate_calls (test_execution.ExecutionTests.test_resume_rejects_duplicate_calls) ... ok
+test_saved_real_dev_call_validates (test_execution.ExecutionTests.test_saved_real_dev_call_validates) ... ok
 test_complete_analysis_io_with_explicit_test_stub (test_project.ProjectTests.test_complete_analysis_io_with_explicit_test_stub) ... ok
 test_complete_balanced_data (test_project.ProjectTests.test_complete_balanced_data) ... ok
 test_context_k4_is_subset_of_k16 (test_project.ProjectTests.test_context_k4_is_subset_of_k16) ... ok
@@ -22,6 +29,6 @@ test_scoring_no_substring_shortcut (test_project.ProjectTests.test_scoring_no_su
 test_strong_paired_effect (test_project.ProjectTests.test_strong_paired_effect) ... ok
 
 ----------------------------------------------------------------------
-Ran 19 tests in 0.874s
+Ran 27 tests in 8.301s
 
 OK
