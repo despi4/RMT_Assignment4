@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="600" viewBox="0 0 1120 600">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#1e293b;font-size:14px}</style>
+<text x="90" y="35" font-size="22">Factual accuracy and closed-book baseline</text>
+<text x="20" y="60">Accuracy %; 95% bootstrap CI over facts</text>
+<line x1="90" y1="450.0" x2="1075" y2="450.0" stroke="#d9e1e8"/>
+<text x="55" y="455.0">0</text>
+<line x1="90" y1="375.0" x2="1075" y2="375.0" stroke="#d9e1e8"/>
+<text x="55" y="380.0">20</text>
+<line x1="90" y1="300.0" x2="1075" y2="300.0" stroke="#d9e1e8"/>
+<text x="55" y="305.0">40</text>
+<line x1="90" y1="225.0" x2="1075" y2="225.0" stroke="#d9e1e8"/>
+<text x="55" y="230.0">60</text>
+<line x1="90" y1="150.0" x2="1075" y2="150.0" stroke="#d9e1e8"/>
+<text x="55" y="155.0">80</text>
+<line x1="90" y1="75.0" x2="1075" y2="75.0" stroke="#d9e1e8"/>
+<text x="55" y="80.0">100</text>
+<rect x="122.83333333333334" y="450.0" width="98.49999999999999" height="0.0" fill="#2563a5"/>
+<line x1="172.08333333333334" y1="450.0" x2="172.08333333333334" y2="450.0" stroke="#111827" stroke-width="2"/>
+<line x1="165.08333333333334" y1="450.0" x2="179.08333333333334" y2="450.0" stroke="#111827"/>
+<line x1="165.08333333333334" y1="450.0" x2="179.08333333333334" y2="450.0" stroke="#111827"/>
+<text x="172.08333333333334" y="440.0" text-anchor="middle">0.0</text>
+<text transform="translate(172.08333333333334,474) rotate(30)" text-anchor="start">closed_book</text>
+<rect x="287.0" y="78.125" width="98.49999999999999" height="371.875" fill="#2563a5"/>
+<line x1="336.25" y1="84.375" x2="336.25" y2="75.0" stroke="#111827" stroke-width="2"/>
+<line x1="329.25" y1="84.375" x2="343.25" y2="84.375" stroke="#111827"/>
+<line x1="329.25" y1="75.0" x2="343.25" y2="75.0" stroke="#111827"/>
+<text x="336.25" y="87" text-anchor="middle">99.2</text>
+<text transform="translate(336.25,474) rotate(30)" text-anchor="start">clean</text>
+<rect x="451.16666666666663" y="80.20833333333337" width="98.49999999999999" height="369.79166666666663" fill="#2563a5"/>
+<line x1="500.41666666666663" y1="88.54166666666669" x2="500.41666666666663" y2="75.0" stroke="#111827" stroke-width="2"/>
+<line x1="493.41666666666663" y1="88.54166666666669" x2="507.41666666666663" y2="88.54166666666669" stroke="#111827"/>
+<line x1="493.41666666666663" y1="75.0" x2="507.41666666666663" y2="75.0" stroke="#111827"/>
+<text x="500.41666666666663" y="87" text-anchor="middle">98.6</text>
+<text transform="translate(500.41666666666663,474) rotate(30)" text-anchor="start">irrelevant_4</text>
+<rect x="615.3333333333334" y="138.54166666666663" width="98.49999999999999" height="311.45833333333337" fill="#2563a5"/>
+<line x1="664.5833333333334" y1="155.20833333333331" x2="664.5833333333334" y2="122.91666666666669" stroke="#111827" stroke-width="2"/>
+<line x1="657.5833333333334" y1="155.20833333333331" x2="671.5833333333334" y2="155.20833333333331" stroke="#111827"/>
+<line x1="657.5833333333334" y1="122.91666666666669" x2="671.5833333333334" y2="122.91666666666669" stroke="#111827"/>
+<text x="664.5833333333334" y="112.91666666666669" text-anchor="middle">83.1</text>
+<text transform="translate(664.5833333333334,474) rotate(30)" text-anchor="start">similar_4</text>
+<rect x="779.5" y="81.25" width="98.49999999999999" height="368.75" fill="#2563a5"/>
+<line x1="828.75" y1="89.58333333333331" x2="828.75" y2="75.0" stroke="#111827" stroke-width="2"/>
+<line x1="821.75" y1="89.58333333333331" x2="835.75" y2="89.58333333333331" stroke="#111827"/>
+<line x1="821.75" y1="75.0" x2="835.75" y2="75.0" stroke="#111827"/>
+<text x="828.75" y="87" text-anchor="middle">98.3</text>
+<text transform="translate(828.75,474) rotate(30)" text-anchor="start">irrelevant_16</text>
+<rect x="943.6666666666666" y="216.66666666666666" width="98.49999999999999" height="233.33333333333334" fill="#2563a5"/>
+<line x1="992.9166666666666" y1="235.41666666666669" x2="992.9166666666666" y2="198.95833333333334" stroke="#111827" stroke-width="2"/>
+<line x1="985.9166666666666" y1="235.41666666666669" x2="999.9166666666666" y2="235.41666666666669" stroke="#111827"/>
+<line x1="985.9166666666666" y1="198.95833333333334" x2="999.9166666666666" y2="198.95833333333334" stroke="#111827"/>
+<text x="992.9166666666666" y="188.95833333333334" text-anchor="middle">62.2</text>
+<text transform="translate(992.9166666666666,474) rotate(30)" text-anchor="start">similar_16</text>
+</svg>

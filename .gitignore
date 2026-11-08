@@ -17,3 +17,8 @@ freeze/protocol_document*
 *.pdf
 Assignment4_Report*
 REPORT_PLAN.md
+
+# Local machine commands and private Moodle observation remain local.
+Desktop_Run_Commands_RU.txt
+results/run_provenance.json
+results/explanation_export/

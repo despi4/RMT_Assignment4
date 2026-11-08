@@ -1,0 +1,91 @@
+record_id,condition,question,context,answer,expected
+test-000-s17-clean,clean,What is the capital city of Veloria-T2743?,The capital city of Veloria-T2743 is Narara.,Narara,Narara
+test-000-s29-clean,clean,What is the capital city of Veloria-T2743?,The capital city of Veloria-T2743 is Narara.,Narara,Narara
+test-000-s17-irrelevant_4,irrelevant_4,What is the capital city of Veloria-T2743?,"The capital city of Veloria-T2743 is Narara.
+The central lake of Veloria-T5884 is Mipaku.
+The central lake of Veloria-T1867 is Narafo.
+The central lake of Veloria-T1077 is Kosumi.
+The central lake of Veloria-T3997 is Vepafo.",Narara,Narara
+test-000-s29-irrelevant_4,irrelevant_4,What is the capital city of Veloria-T2743?,"The central lake of Veloria-T5737 is Natavi.
+The central lake of Veloria-T1698 is Safuna.
+The capital city of Veloria-T2743 is Narara.
+The central lake of Veloria-T2610 is Zudina.
+The central lake of Veloria-T4979 is Fafufo.",Narara,Narara
+test-000-s17-similar_4,similar_4,What is the capital city of Veloria-T2743?,"The capital city of Veloria-T2743 is Narara.
+The capital city of Veloria-T5884 is Mipaku.
+The capital city of Veloria-T1867 is Narafo.
+The capital city of Veloria-T1077 is Kosumi.
+The capital city of Veloria-T3997 is Vepafo.",Narara,Narara
+test-000-s29-similar_4,similar_4,What is the capital city of Veloria-T2743?,"The capital city of Veloria-T5737 is Natavi.
+The capital city of Veloria-T1698 is Safuna.
+The capital city of Veloria-T2743 is Narara.
+The capital city of Veloria-T2610 is Zudina.
+The capital city of Veloria-T4979 is Fafufo.",Narara,Narara
+test-000-s17-irrelevant_16,irrelevant_16,What is the capital city of Veloria-T2743?,"The capital city of Veloria-T2743 is Narara.
+The central lake of Veloria-T5884 is Mipaku.
+The central lake of Veloria-T1867 is Narafo.
+The central lake of Veloria-T1077 is Kosumi.
+The central lake of Veloria-T3997 is Vepafo.
+The central lake of Veloria-T8520 is Rumoku.
+The central lake of Veloria-T4051 is Fasura.
+The central lake of Veloria-T6283 is Runera.
+The central lake of Veloria-T8255 is Kovina.
+The central lake of Veloria-T7511 is Lozepo.
+The central lake of Veloria-T7128 is Telifo.
+The central lake of Veloria-T2834 is Rukovi.
+The central lake of Veloria-T2407 is Losuza.
+The central lake of Veloria-T9195 is Teneku.
+The central lake of Veloria-T8919 is Famolo.
+The central lake of Veloria-T7158 is Fanede.
+The central lake of Veloria-T9785 is Lovite.",Narara,Narara
+test-000-s29-irrelevant_16,irrelevant_16,What is the capital city of Veloria-T2743?,"The central lake of Veloria-T5737 is Natavi.
+The central lake of Veloria-T1698 is Safuna.
+The central lake of Veloria-T2610 is Zudina.
+The central lake of Veloria-T4979 is Fafufo.
+The central lake of Veloria-T8576 is Verana.
+The central lake of Veloria-T8231 is Dinesa.
+The central lake of Veloria-T7128 is Telifo.
+The central lake of Veloria-T9385 is Vemode.
+The capital city of Veloria-T2743 is Narara.
+The central lake of Veloria-T6952 is Kosude.
+The central lake of Veloria-T8444 is Kovilo.
+The central lake of Veloria-T1828 is Nafumi.
+The central lake of Veloria-T7698 is Mitara.
+The central lake of Veloria-T5896 is Mitavi.
+The central lake of Veloria-T7760 is Namovi.
+The central lake of Veloria-T4051 is Fasura.
+The central lake of Veloria-T6672 is Vedina.",Narara,Narara
+test-000-s17-similar_16,similar_16,What is the capital city of Veloria-T2743?,"The capital city of Veloria-T2743 is Narara.
+The capital city of Veloria-T5884 is Mipaku.
+The capital city of Veloria-T1867 is Narafo.
+The capital city of Veloria-T1077 is Kosumi.
+The capital city of Veloria-T3997 is Vepafo.
+The capital city of Veloria-T8520 is Rumoku.
+The capital city of Veloria-T4051 is Fasura.
+The capital city of Veloria-T6283 is Runera.
+The capital city of Veloria-T8255 is Kovina.
+The capital city of Veloria-T7511 is Lozepo.
+The capital city of Veloria-T7128 is Telifo.
+The capital city of Veloria-T2834 is Rukovi.
+The capital city of Veloria-T2407 is Losuza.
+The capital city of Veloria-T9195 is Teneku.
+The capital city of Veloria-T8919 is Famolo.
+The capital city of Veloria-T7158 is Fanede.
+The capital city of Veloria-T9785 is Lovite.",Narara,Narara
+test-002-s17-similar_16,similar_16,Name the capital associated with the country Veloria-T7158.,"The capital city of Veloria-T9195 is Teneku.
+The capital city of Veloria-T1559 is Sazepo.
+The capital city of Veloria-T7511 is Lozepo.
+The capital city of Veloria-T8177 is Mineza.
+The capital city of Veloria-T4051 is Fasura.
+The capital city of Veloria-T4979 is Fafufo.
+The capital city of Veloria-T8443 is Tezeza.
+The capital city of Veloria-T3996 is Sakofo.
+The capital city of Veloria-T1815 is Mitade.
+The capital city of Veloria-T5090 is Fasusa.
+The capital city of Veloria-T8330 is Difuna.
+The capital city of Veloria-T1438 is Badivi.
+The capital city of Veloria-T1446 is Tefupo.
+The capital city of Veloria-T4933 is Mikosa.
+The capital city of Veloria-T2942 is Zusuku.
+The capital city of Veloria-T2834 is Rukovi.
+The capital city of Veloria-T7158 is Fanede.",Fanede,Fanede

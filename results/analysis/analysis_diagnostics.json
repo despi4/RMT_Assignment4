@@ -1,0 +1,14 @@
+{
+  "all_planned_calls_and_pairs_complete": true,
+  "cluster_unit": "fact_id",
+  "n_fact_clusters": 120,
+  "repeated_calls_are_not_independent": true,
+  "normality_test_required": false,
+  "test_assumption": "Paired sign-flip exchangeability under the null; no normality assumption",
+  "causal_limits": [
+    "Clean/noise confounds context length and content",
+    "Type templates may differ in token length"
+  ],
+  "context_token_counts_reported": true,
+  "observed_model_failures_excluded": false
+}

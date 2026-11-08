@@ -1,0 +1,25 @@
+{
+  "source_commit": "039f7dd028b78ee08eb81af5a2296a4d8f19930c",
+  "execution_location": "Desktop/rmt/RMT_Assignment4",
+  "started_at_utc": "2026-11-08T18:18:36.598411+00:00",
+  "finished_at_utc": "2026-11-08T18:59:14.196245+00:00",
+  "elapsed_minutes": 40.62663056666667,
+  "calls": 2520,
+  "technical_errors": 0,
+  "runtime_profile": {
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "hardware": "13th Gen Intel(R) Core(TM) i5-13450HX",
+    "num_threads": 2,
+    "attention": "eager",
+    "schedule_seed": 952
+  },
+  "test_dataset_sha256": "958be00e198cf90914097b46f67ea0fd7af9f5c1bc4cc502d90a11fd7f8445d2",
+  "raw_sha256": "446e3bf1e57eac89d75191e6c00f4b35ce394bb6c492968b0e03204c6b8929af",
+  "freeze_sha256": "c295f823eb79de481eafa082b8dccd1a3c4470adf6a2c401bd78c8a33ee18e55",
+  "upload_evidence": "Actual Moodle submission observed; private screenshot and protocol retained locally",
+  "timestamp_precision": "Moodle showed upload at 22:52 +05:00 on 2026-11-08; seconds were not shown",
+  "supplementary_summary": "make_explanation.py is a post-run descriptive summary; primary preregistered analysis remains scripts/analyze.py",
+  "human_error_review": "Pending two independent human raters; automatic diagnostics are labelled separately",
+  "independent_reproduction": "Not performed by another person in a clean environment"
+}

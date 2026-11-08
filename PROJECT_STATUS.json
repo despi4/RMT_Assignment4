@@ -1,19 +1,25 @@
 {
   "scope": "code, synthetic data, protocol and development evidence; no report",
   "software_tests_passed": 27,
-  "real_development_calls": 189,
+  "real_development_calls": 252,
   "development_errors": 0,
   "final_test_calls_planned": 2520,
-  "final_experiment_status": "NOT RUN; local freeze and real Moodle evidence required",
+  "final_experiment_status": "COMPLETED AND VALIDATED; 2520 real final calls",
   "original_assignment3": {
     "rows_recomputed": 30,
     "contrasts": 14,
     "original_tests_passed": 12
   },
   "report": "EXCLUDED BY USER REQUEST",
-  "moodle_submission": "Team reports upload; receipt and timestamp not yet recorded locally",
+  "moodle_submission": "Appendix A observed as Submitted for grading; original document and receipt retained privately",
   "independent_reproduction": "PENDING",
   "latest_cpu_validation_calls": 63,
   "latest_cpu_validation_directory": "validation/cpu_smoke_verified_63",
-  "code_update": "Explicit CPU launcher and safe resume; see docs/IMPLEMENTATION_UPDATE.json"
+  "code_update": "Explicit CPU launcher and safe resume; see docs/IMPLEMENTATION_UPDATE.json",
+  "desktop_dev_smoke_calls": 63,
+  "final_test_calls_completed": 2520,
+  "final_technical_errors": 0,
+  "final_finished_at": "2026-11-08T18:59:14.196245+00:00",
+  "analysis_status": "Computed; independently recalculated from raw answers",
+  "human_error_review": "PENDING; 30 selected cases ready"
 }

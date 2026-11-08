@@ -1,0 +1,6 @@
+objective,evidence,scope
+1,prior_work/data/mechanism_map.csv; final metadata,Literature mechanisms and fixed-weight context use; no new training
+2,prior_work/recomputed/summary.json; data/manifest.json,Newly supplied synthetic facts; common/rare direct contrasts remain missing
+3,prior_work/recomputed/comparisons.csv,14 recomputed published contrasts; 3 SFT contrasts qualified; not new Qwen FT results
+4,main_results.csv; paired_comparisons.csv; subgroups.csv; human error review,"New context-quality evidence, with literature-only evidence on training repetition"
+5,analysis_diagnostics.json; provenance.json; completed Discussion,Bounded interpretation; limitations and contradictions retained

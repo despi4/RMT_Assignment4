@@ -1,0 +1,4 @@
+Figure 1. Gold-city exact-match accuracy by condition; 95% fact-cluster bootstrap intervals. Source: main_results.csv.
+Figure 2. Sensitivity to distractor count and type; clean condition supplies the 0-distractor reference. Source: main_results.csv.
+Figure 3. Descriptive target-position results under similar_16; distractor samples also change across context seeds. Source: subgroups.csv.
+Figure 4. Answerability confusion counts; empty responses count as no substantive answer, not correct abstentions. Source: answerability_confusion.csv.

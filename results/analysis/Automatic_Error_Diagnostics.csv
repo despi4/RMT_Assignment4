@@ -1,0 +1,537 @@
+﻿record_id,condition,automatic_diagnostic,question,expected,answer,status
+test-103-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T2884?,UNKNOWN,Ruvifo,Automatic descriptive rule; not independent human coding
+test-088-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T1986?,Milivi,Tepalo,Automatic descriptive rule; not independent human coding
+test-035-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1446.,UNKNOWN,Narafo,Automatic descriptive rule; not independent human coding
+test-074-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1559.,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-041-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T3785.,UNKNOWN,Mineza,Automatic descriptive rule; not independent human coding
+test-052-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T3997?,UNKNOWN,Rumoku,Automatic descriptive rule; not independent human coding
+test-014-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T5911.,Minena,Rumote,Automatic descriptive rule; not independent human coding
+test-096-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T9740?,UNKNOWN,Vemovi,Automatic descriptive rule; not independent human coding
+test-078-s43-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T8977?,Bavipo,Rumote,Automatic descriptive rule; not independent human coding
+test-007-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T1003?,Fazera,Rutade,Automatic descriptive rule; not independent human coding
+test-007-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1003?,UNKNOWN,Fafufo,Automatic descriptive rule; not independent human coding
+test-089-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8870.,UNKNOWN,Fakoku,Automatic descriptive rule; not independent human coding
+test-110-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T7853.,UNKNOWN,Rukora,Automatic descriptive rule; not independent human coding
+test-045-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T9770?,Kokolo,Fafufo,Automatic descriptive rule; not independent human coding
+test-073-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T1698?,Safuna,Lovite,Automatic descriptive rule; not independent human coding
+test-060-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8576?,UNKNOWN,Rumoku,Automatic descriptive rule; not independent human coding
+test-036-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T5884?,Mipaku,Ruzelo,Automatic descriptive rule; not independent human coding
+test-005-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1171.,UNKNOWN,Vepafo,Automatic descriptive rule; not independent human coding
+test-027-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T6113?,Zuralo,Rutara,Automatic descriptive rule; not independent human coding
+test-010-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T4051?,UNKNOWN,Badisa,Automatic descriptive rule; not independent human coding
+test-081-s29-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T8919?,Famolo,Fazera,Automatic descriptive rule; not independent human coding
+test-102-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1692?,UNKNOWN,Dinesa,Automatic descriptive rule; not independent human coding
+test-099-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T4574?,UNKNOWN,Mineza,Automatic descriptive rule; not independent human coding
+test-053-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T2899.,UNKNOWN,Fasuvi,Automatic descriptive rule; not independent human coding
+test-090-s29-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T7698?,Mitara,Fanede,Automatic descriptive rule; not independent human coding
+test-004-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T7241?,Bapate,Fazera,Automatic descriptive rule; not independent human coding
+test-010-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T4051?,UNKNOWN,Ruvifo,Automatic descriptive rule; not independent human coding
+test-024-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1601?,UNKNOWN,Mitade,Automatic descriptive rule; not independent human coding
+test-091-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T1780?,Zunera,Fafufo,Automatic descriptive rule; not independent human coding
+test-119-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8444.,UNKNOWN,Rufute,Automatic descriptive rule; not independent human coding
+test-045-s29-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T9770?,Kokolo,Lozepo,Automatic descriptive rule; not independent human coding
+test-084-s43-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T9008?,Korana,Rukovi,Automatic descriptive rule; not independent human coding
+test-087-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T1089?,Naravi,Rumoku,Automatic descriptive rule; not independent human coding
+test-105-s29-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T8169?,Nasute,Mineza,Automatic descriptive rule; not independent human coding
+test-004-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7241?,UNKNOWN,Tedivi,Automatic descriptive rule; not independent human coding
+test-038-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9785.,UNKNOWN,Dinesa,Automatic descriptive rule; not independent human coding
+test-049-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T8443?,UNKNOWN,Nazevi,Automatic descriptive rule; not independent human coding
+test-095-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T5338.,Dilira,Rukovi,Automatic descriptive rule; not independent human coding
+test-064-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9888?,UNKNOWN,Ruvifo,Automatic descriptive rule; not independent human coding
+test-054-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T7105?,UNKNOWN,Ruvifo,Automatic descriptive rule; not independent human coding
+test-030-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2130?,UNKNOWN,Nadiku,Automatic descriptive rule; not independent human coding
+test-039-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8520?,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-009-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T4565?,UNKNOWN,Difute,Automatic descriptive rule; not independent human coding
+test-073-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1698?,UNKNOWN,Ruzede,Automatic descriptive rule; not independent human coding
+test-045-s43-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T9770?,Kokolo,Komovi,Automatic descriptive rule; not independent human coding
+test-106-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7132?,UNKNOWN,Sapasa,Automatic descriptive rule; not independent human coding
+test-056-s43-similar_4,similar_4,other_wrong_answer,Name the capital associated with the country Veloria-T8572.,Faliku,Famiku,Automatic descriptive rule; not independent human coding
+test-117-s43-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T2568?,Runesa,Ruvifo,Automatic descriptive rule; not independent human coding
+test-002-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T7158.,UNKNOWN,Tepalo,Automatic descriptive rule; not independent human coding
+test-107-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8899.,UNKNOWN,Rukora,Automatic descriptive rule; not independent human coding
+test-068-s43-similar_16,similar_16,other_wrong_answer,Name the capital associated with the country Veloria-T5090.,Fasusa,Rudede,Automatic descriptive rule; not independent human coding
+test-071-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1438.,UNKNOWN,Fazera,Automatic descriptive rule; not independent human coding
+test-078-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T8977?,Bavipo,Rutade,Automatic descriptive rule; not independent human coding
+test-015-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1828?,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-096-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T9740?,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-023-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8255.,UNKNOWN,Mikopo,Automatic descriptive rule; not independent human coding
+test-089-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8870.,UNKNOWN,Rufute,Automatic descriptive rule; not independent human coding
+test-029-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T4979.,UNKNOWN,Mitavi,Automatic descriptive rule; not independent human coding
+test-026-s29-irrelevant_16,irrelevant_16,other_wrong_answer,Name the capital associated with the country Veloria-T9385.,Vemode,Vmode,Automatic descriptive rule; not independent human coding
+test-019-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7128?,UNKNOWN,Rukora,Automatic descriptive rule; not independent human coding
+test-116-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T2834.,UNKNOWN,Ruvifo,Automatic descriptive rule; not independent human coding
+test-112-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T2661?,Barafo,Rutade,Automatic descriptive rule; not independent human coding
+test-046-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7096?,UNKNOWN,Saravi,Automatic descriptive rule; not independent human coding
+test-057-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T7466?,UNKNOWN,Nasute,Automatic descriptive rule; not independent human coding
+test-001-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T6283?,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-110-s43-similar_4,similar_4,exact_distractor_copy,Name the capital associated with the country Veloria-T7853.,Nalimi,Rukora,Automatic descriptive rule; not independent human coding
+test-049-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T8443?,Tezeza,Dinesa,Automatic descriptive rule; not independent human coding
+test-115-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T3513?,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-108-s29-similar_16,similar_16,other_wrong_answer,What is the capital city of Veloria-T1867?,Narafo,Favuca,Automatic descriptive rule; not independent human coding
+test-099-s43-similar_4,similar_4,other_wrong_answer,What is the capital city of Veloria-T4574?,Zuraza,Razuza,Automatic descriptive rule; not independent human coding
+test-039-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8520?,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-112-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T2661?,UNKNOWN,Rumote,Automatic descriptive rule; not independent human coding
+test-037-s17-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T3475?,Vekovi,Fasura,Automatic descriptive rule; not independent human coding
+test-008-s17-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T1077.,Kosumi,Fasura,Automatic descriptive rule; not independent human coding
+test-074-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1559.,UNKNOWN,Mikopo,Automatic descriptive rule; not independent human coding
+test-034-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T8792?,Sadipo,Sadilo,Automatic descriptive rule; not independent human coding
+test-111-s29-similar_16,similar_16,other_wrong_answer,What is the capital city of Veloria-T2544?,Ditana,Sanimi,Automatic descriptive rule; not independent human coding
+test-110-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T7853.,UNKNOWN,Sanelo,Automatic descriptive rule; not independent human coding
+test-003-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T5896?,UNKNOWN,Fakoku,Automatic descriptive rule; not independent human coding
+test-093-s43-irrelevant_16,irrelevant_16,other_wrong_answer,What is the capital city of Veloria-T2942?,Zusuku,Suzuku,Automatic descriptive rule; not independent human coding
+test-076-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5354?,UNKNOWN,Fasulo,Automatic descriptive rule; not independent human coding
+test-026-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T9385.,Vemode,Nalimi,Automatic descriptive rule; not independent human coding
+test-056-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T8572.,Faliku,Fasulo,Automatic descriptive rule; not independent human coding
+test-073-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1698?,UNKNOWN,Nafumi,Automatic descriptive rule; not independent human coding
+test-016-s43-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T5904?,Nakopo,Natalo,Automatic descriptive rule; not independent human coding
+test-096-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T9740?,UNKNOWN,Fasulo,Automatic descriptive rule; not independent human coding
+test-013-s17-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T8770?,Natalo,Ruvifo,Automatic descriptive rule; not independent human coding
+test-118-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T5378?,Bazera,Vepalo,Automatic descriptive rule; not independent human coding
+test-061-s17-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T8330?,Difuna,Rukovi,Automatic descriptive rule; not independent human coding
+test-100-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7502?,UNKNOWN,Fanede,Automatic descriptive rule; not independent human coding
+test-019-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7128?,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-049-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T8443?,Tezeza,Sazevi,Automatic descriptive rule; not independent human coding
+test-093-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2942?,UNKNOWN,Fasuvi,Automatic descriptive rule; not independent human coding
+test-083-s29-similar_16,similar_16,other_wrong_answer,Name the capital associated with the country Veloria-T5669.,Sadivi,Sadiavi,Automatic descriptive rule; not independent human coding
+test-095-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5338.,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-026-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9385.,UNKNOWN,Mikopo,Automatic descriptive rule; not independent human coding
+test-019-s29-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T7128?,Telifo,Rufute,Automatic descriptive rule; not independent human coding
+test-069-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T6952?,UNKNOWN,Naravi,Automatic descriptive rule; not independent human coding
+test-080-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T2407.,UNKNOWN,Nazevi,Automatic descriptive rule; not independent human coding
+test-060-s43-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T8576?,Verana,Ruzelo,Automatic descriptive rule; not independent human coding
+test-070-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T6075?,Tezelo,Rukora,Automatic descriptive rule; not independent human coding
+test-024-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1601?,UNKNOWN,Nasute,Automatic descriptive rule; not independent human coding
+test-064-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9888?,UNKNOWN,Nazevi,Automatic descriptive rule; not independent human coding
+test-010-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T4051?,UNKNOWN,Lovite,Automatic descriptive rule; not independent human coding
+test-027-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T6113?,UNKNOWN,Ruzelo,Automatic descriptive rule; not independent human coding
+test-094-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T6565?,UNKNOWN,Fafuku,Automatic descriptive rule; not independent human coding
+test-026-s29-similar_4,similar_4,other_wrong_answer,Name the capital associated with the country Veloria-T9385.,Vemode,Vmode,Automatic descriptive rule; not independent human coding
+test-040-s29-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T5005?,Zulipo,Rumote,Automatic descriptive rule; not independent human coding
+test-045-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T9770?,UNKNOWN,Fafufo,Automatic descriptive rule; not independent human coding
+test-001-s43-similar_16,similar_16,other_wrong_answer,Which city serves as the capital of Veloria-T6283?,Runera,Ruta,Automatic descriptive rule; not independent human coding
+test-040-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T5005?,Zulipo,Fasura,Automatic descriptive rule; not independent human coding
+test-004-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T7241?,Bapate,Ruvifo,Automatic descriptive rule; not independent human coding
+test-095-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5338.,UNKNOWN,Rukovi,Automatic descriptive rule; not independent human coding
+test-057-s29-similar_4,similar_4,other_wrong_answer,What is the capital city of Veloria-T7466?,Kotafo,Tedadvi,Automatic descriptive rule; not independent human coding
+test-033-s17-similar_4,similar_4,unnecessary_abstention,What is the capital city of Veloria-T1335?,Sadilo,UNKNOWN,Automatic descriptive rule; not independent human coding
+test-023-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8255.,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-064-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9888?,UNKNOWN,Rukora,Automatic descriptive rule; not independent human coding
+test-023-s17-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T8255.,Kovina,Ruvifo,Automatic descriptive rule; not independent human coding
+test-031-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1359?,UNKNOWN,Fasura,Automatic descriptive rule; not independent human coding
+test-109-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T2233?,Ruzede,Rutara,Automatic descriptive rule; not independent human coding
+test-043-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T3944?,Bafuvi,Bazera,Automatic descriptive rule; not independent human coding
+test-047-s43-similar_16,similar_16,other_wrong_answer,Name the capital associated with the country Veloria-T9550.,Zulilo,Fasula,Automatic descriptive rule; not independent human coding
+test-084-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T9008?,UNKNOWN,Rukovi,Automatic descriptive rule; not independent human coding
+test-022-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T5076?,Minemi,Ruzede,Automatic descriptive rule; not independent human coding
+test-048-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T3798?,UNKNOWN,Rutuoni,Automatic descriptive rule; not independent human coding
+test-021-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T7760?,UNKNOWN,Narafo,Automatic descriptive rule; not independent human coding
+test-110-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T7853.,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-084-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T9008?,UNKNOWN,Saravi,Automatic descriptive rule; not independent human coding
+test-053-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T2899.,UNKNOWN,Fanede,Automatic descriptive rule; not independent human coding
+test-000-s43-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T2743?,Narara,Rutade,Automatic descriptive rule; not independent human coding
+test-094-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T6565?,UNKNOWN,Vedina,Automatic descriptive rule; not independent human coding
+test-053-s43-similar_16,similar_16,other_wrong_answer,Name the capital associated with the country Veloria-T2899.,Zuraku,Fasula,Automatic descriptive rule; not independent human coding
+test-005-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T1171.,Komovi,Mikosa,Automatic descriptive rule; not independent human coding
+test-055-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T4205?,Velira,Ruzede,Automatic descriptive rule; not independent human coding
+test-029-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T4979.,UNKNOWN,Ruvifo,Automatic descriptive rule; not independent human coding
+test-068-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5090.,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-094-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T6565?,Sadira,Vepafo,Automatic descriptive rule; not independent human coding
+test-104-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T5737.,Natavi,Rutara,Automatic descriptive rule; not independent human coding
+test-018-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2143?,UNKNOWN,Nasute,Automatic descriptive rule; not independent human coding
+test-013-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T8770?,UNKNOWN,Kokolo,Automatic descriptive rule; not independent human coding
+test-018-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2143?,UNKNOWN,Fasusa,Automatic descriptive rule; not independent human coding
+test-020-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9211.,UNKNOWN,Fakoku,Automatic descriptive rule; not independent human coding
+test-087-s43-similar_4,similar_4,other_wrong_answer,What is the capital city of Veloria-T1089?,Naravi,Narari,Automatic descriptive rule; not independent human coding
+test-043-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T3944?,UNKNOWN,Sapasa,Automatic descriptive rule; not independent human coding
+test-117-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2568?,UNKNOWN,Teneku,Automatic descriptive rule; not independent human coding
+test-099-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T4574?,UNKNOWN,Rufute,Automatic descriptive rule; not independent human coding
+test-009-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T4565?,UNKNOWN,Fazera,Automatic descriptive rule; not independent human coding
+test-097-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7511?,UNKNOWN,Mikosa,Automatic descriptive rule; not independent human coding
+test-000-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2743?,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-056-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8572.,UNKNOWN,Difute,Automatic descriptive rule; not independent human coding
+test-105-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8169?,UNKNOWN,Nafumi,Automatic descriptive rule; not independent human coding
+test-055-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T4205?,UNKNOWN,Teneku,Automatic descriptive rule; not independent human coding
+test-101-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T6127.,UNKNOWN,Nazevi,Automatic descriptive rule; not independent human coding
+test-112-s43-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T2661?,Barafo,Bafuvi,Automatic descriptive rule; not independent human coding
+test-111-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2544?,UNKNOWN,Sanelo,Automatic descriptive rule; not independent human coding
+test-008-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1077.,UNKNOWN,Rukiri,Automatic descriptive rule; not independent human coding
+test-030-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2130?,UNKNOWN,Samote,Automatic descriptive rule; not independent human coding
+test-083-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5669.,UNKNOWN,Sapasa,Automatic descriptive rule; not independent human coding
+test-073-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T1698?,Safuna,Ruvifo,Automatic descriptive rule; not independent human coding
+test-059-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T4004.,UNKNOWN,Fasura,Automatic descriptive rule; not independent human coding
+test-016-s17-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T5904?,Nakopo,Natalo,Automatic descriptive rule; not independent human coding
+test-046-s17-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T7096?,Kodiku,Difuna,Automatic descriptive rule; not independent human coding
+test-115-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T3513?,UNKNOWN,Difuna,Automatic descriptive rule; not independent human coding
+test-009-s29-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T4565?,Satapo,Fakoku,Automatic descriptive rule; not independent human coding
+test-081-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8919?,UNKNOWN,Ruzelo,Automatic descriptive rule; not independent human coding
+test-070-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T6075?,UNKNOWN,Rukora,Automatic descriptive rule; not independent human coding
+test-075-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T5915?,UNKNOWN,Fasuvi,Automatic descriptive rule; not independent human coding
+test-118-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5378?,UNKNOWN,Sadivi,Automatic descriptive rule; not independent human coding
+test-035-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1446.,UNKNOWN,Rumote,Automatic descriptive rule; not independent human coding
+test-054-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T7105?,UNKNOWN,Kodiku,Automatic descriptive rule; not independent human coding
+test-093-s29-irrelevant_4,irrelevant_4,other_wrong_answer,What is the capital city of Veloria-T2942?,Zusuku,Suzuku,Automatic descriptive rule; not independent human coding
+test-046-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7096?,UNKNOWN,Sakofo,Automatic descriptive rule; not independent human coding
+test-052-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T3997?,Vepafo,Rutade,Automatic descriptive rule; not independent human coding
+test-044-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8177.,UNKNOWN,Sakofo,Automatic descriptive rule; not independent human coding
+test-043-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T3944?,UNKNOWN,Dilira,Automatic descriptive rule; not independent human coding
+test-026-s43-irrelevant_16,irrelevant_16,other_wrong_answer,Name the capital associated with the country Veloria-T9385.,Vemode,Vmode,Automatic descriptive rule; not independent human coding
+test-111-s43-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T2544?,Ditana,Fasura,Automatic descriptive rule; not independent human coding
+test-083-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T5669.,Sadivi,Vepalo,Automatic descriptive rule; not independent human coding
+test-047-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9550.,UNKNOWN,Fazera,Automatic descriptive rule; not independent human coding
+test-007-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1003?,UNKNOWN,Ruvifo,Automatic descriptive rule; not independent human coding
+test-104-s43-similar_4,similar_4,exact_distractor_copy,Name the capital associated with the country Veloria-T5737.,Natavi,Sakofo,Automatic descriptive rule; not independent human coding
+test-034-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T8792?,Sadipo,Ruvifo,Automatic descriptive rule; not independent human coding
+test-093-s43-similar_4,similar_4,other_wrong_answer,What is the capital city of Veloria-T2942?,Zusuku,Suzuku,Automatic descriptive rule; not independent human coding
+test-016-s29-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T5904?,Nakopo,Mipaku,Automatic descriptive rule; not independent human coding
+test-050-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T3996.,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-113-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T3557.,UNKNOWN,Namovi,Automatic descriptive rule; not independent human coding
+test-098-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9120.,UNKNOWN,Nazevi,Automatic descriptive rule; not independent human coding
+test-060-s29-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T8576?,Verana,Sakofo,Automatic descriptive rule; not independent human coding
+test-060-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T8576?,Verana,Fasulo,Automatic descriptive rule; not independent human coding
+test-023-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8255.,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-035-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T1446.,Tefupo,Ruzede,Automatic descriptive rule; not independent human coding
+test-032-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T4441.,UNKNOWN,Natalo,Automatic descriptive rule; not independent human coding
+test-090-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T7698?,Mitara,Fasura,Automatic descriptive rule; not independent human coding
+test-089-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8870.,UNKNOWN,Natalo,Automatic descriptive rule; not independent human coding
+test-109-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T2233?,UNKNOWN,Fazera,Automatic descriptive rule; not independent human coding
+test-024-s29-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T1601?,Bafuku,Nadiku,Automatic descriptive rule; not independent human coding
+test-085-s17-similar_16,similar_16,other_wrong_answer,Which city serves as the capital of Veloria-T9628?,Zutalo,Fasula,Automatic descriptive rule; not independent human coding
+test-026-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9385.,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-006-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T7565?,Fakoku,Tedilo,Automatic descriptive rule; not independent human coding
+test-107-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8899.,UNKNOWN,Fasulo,Automatic descriptive rule; not independent human coding
+test-050-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T3996.,UNKNOWN,Bapate,Automatic descriptive rule; not independent human coding
+test-072-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8417?,UNKNOWN,Lozemi,Automatic descriptive rule; not independent human coding
+test-079-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T9454?,Vemovi,Fasusa,Automatic descriptive rule; not independent human coding
+test-037-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T3475?,UNKNOWN,Rumoku,Automatic descriptive rule; not independent human coding
+test-055-s17-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T4205?,Velira,Sanelo,Automatic descriptive rule; not independent human coding
+test-113-s43-similar_4,similar_4,exact_distractor_copy,Name the capital associated with the country Veloria-T3557.,Samote,Zuzepo,Automatic descriptive rule; not independent human coding
+test-097-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7511?,UNKNOWN,Fakoku,Automatic descriptive rule; not independent human coding
+test-011-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T1338.,Rufute,Sazepo,Automatic descriptive rule; not independent human coding
+test-001-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T6283?,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-008-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1077.,UNKNOWN,Fafufo,Automatic descriptive rule; not independent human coding
+test-090-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T7698?,UNKNOWN,Nasute,Automatic descriptive rule; not independent human coding
+test-021-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T7760?,Namovi,Fasusa,Automatic descriptive rule; not independent human coding
+test-069-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T6952?,UNKNOWN,Lozepo,Automatic descriptive rule; not independent human coding
+test-108-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1867?,UNKNOWN,Difute,Automatic descriptive rule; not independent human coding
+test-077-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T2610.,UNKNOWN,Fasuvi,Automatic descriptive rule; not independent human coding
+test-022-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T5076?,Minemi,Fasuvi,Automatic descriptive rule; not independent human coding
+test-105-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T8169?,Nasute,Rukovi,Automatic descriptive rule; not independent human coding
+test-015-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1828?,UNKNOWN,Dinesa,Automatic descriptive rule; not independent human coding
+test-012-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T6807?,Tedivi,Dinesa,Automatic descriptive rule; not independent human coding
+test-117-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2568?,UNKNOWN,Naravi,Automatic descriptive rule; not independent human coding
+test-055-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T4205?,UNKNOWN,Fanede,Automatic descriptive rule; not independent human coding
+test-095-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5338.,UNKNOWN,Zuraza,Automatic descriptive rule; not independent human coding
+test-055-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T4205?,Velira,Vemovi,Automatic descriptive rule; not independent human coding
+test-088-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1986?,UNKNOWN,Kotarofo,Automatic descriptive rule; not independent human coding
+test-008-s17-similar_4,similar_4,exact_distractor_copy,Name the capital associated with the country Veloria-T1077.,Kosumi,Komovi,Automatic descriptive rule; not independent human coding
+test-065-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5836.,UNKNOWN,Rufute,Automatic descriptive rule; not independent human coding
+test-062-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T9233.,Telide,Dinesa,Automatic descriptive rule; not independent human coding
+test-000-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2743?,UNKNOWN,Fasura,Automatic descriptive rule; not independent human coding
+test-003-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T5896?,Mitavi,Fasuvi,Automatic descriptive rule; not independent human coding
+test-112-s17-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T2661?,Barafo,Fazera,Automatic descriptive rule; not independent human coding
+test-053-s43-similar_4,similar_4,exact_distractor_copy,Name the capital associated with the country Veloria-T2899.,Zuraku,Sakofo,Automatic descriptive rule; not independent human coding
+test-117-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2568?,UNKNOWN,Ruvifo,Automatic descriptive rule; not independent human coding
+test-069-s43-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T6952?,Kosude,Kosumi,Automatic descriptive rule; not independent human coding
+test-104-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5737.,UNKNOWN,Fesula,Automatic descriptive rule; not independent human coding
+test-096-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T9740?,Sadide,Narara,Automatic descriptive rule; not independent human coding
+test-072-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T8417?,Lofude,Faliku,Automatic descriptive rule; not independent human coding
+test-034-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T8792?,UNKNOWN,Mineza,Automatic descriptive rule; not independent human coding
+test-082-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T4791?,Lonemi,Safuna,Automatic descriptive rule; not independent human coding
+test-063-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T4933?,UNKNOWN,Lofude,Automatic descriptive rule; not independent human coding
+test-119-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8444.,UNKNOWN,Bafuku,Automatic descriptive rule; not independent human coding
+test-040-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5005?,UNKNOWN,Mineza,Automatic descriptive rule; not independent human coding
+test-002-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T7158.,UNKNOWN,Dilira,Automatic descriptive rule; not independent human coding
+test-061-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T8330?,UNKNOWN,Ditana,Automatic descriptive rule; not independent human coding
+test-044-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8177.,UNKNOWN,Difute,Automatic descriptive rule; not independent human coding
+test-002-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T7158.,UNKNOWN,Rukovi,Automatic descriptive rule; not independent human coding
+test-053-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T2899.,UNKNOWN,Rukori,Automatic descriptive rule; not independent human coding
+test-059-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T4004.,UNKNOWN,Bafuku,Automatic descriptive rule; not independent human coding
+test-079-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9454?,UNKNOWN,Zuraku,Automatic descriptive rule; not independent human coding
+test-042-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T5433?,UNKNOWN,Saravi,Automatic descriptive rule; not independent human coding
+test-118-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5378?,UNKNOWN,Fasuvi,Automatic descriptive rule; not independent human coding
+test-062-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9233.,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-049-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T8443?,UNKNOWN,Dinesa,Automatic descriptive rule; not independent human coding
+test-050-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T3996.,Sakofo,Zudina,Automatic descriptive rule; not independent human coding
+test-091-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1780?,UNKNOWN,Nafumi,Automatic descriptive rule; not independent human coding
+test-093-s29-similar_4,similar_4,other_wrong_answer,What is the capital city of Veloria-T2942?,Zusuku,Suzuka,Automatic descriptive rule; not independent human coding
+test-004-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7241?,UNKNOWN,Ruvifo,Automatic descriptive rule; not independent human coding
+test-092-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T6261.,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-012-s29-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T6807?,Tedivi,Mineza,Automatic descriptive rule; not independent human coding
+test-101-s43-similar_4,similar_4,exact_distractor_copy,Name the capital associated with the country Veloria-T6127.,Fasulo,Vepate,Automatic descriptive rule; not independent human coding
+test-026-s43-clean,clean,other_wrong_answer,Name the capital associated with the country Veloria-T9385.,Vemode,Vmode,Automatic descriptive rule; not independent human coding
+test-113-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T3557.,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-009-s43-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T4565?,Satapo,Famolo,Automatic descriptive rule; not independent human coding
+test-028-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9195?,UNKNOWN,Zuraza,Automatic descriptive rule; not independent human coding
+test-077-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T2610.,UNKNOWN,Ruzede,Automatic descriptive rule; not independent human coding
+test-072-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8417?,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-100-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7502?,UNKNOWN,Fazera,Automatic descriptive rule; not independent human coding
+test-057-s29-similar_16,similar_16,other_wrong_answer,What is the capital city of Veloria-T7466?,Kotafo,Vamatevo,Automatic descriptive rule; not independent human coding
+test-040-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5005?,UNKNOWN,Sazepo,Automatic descriptive rule; not independent human coding
+test-109-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T2233?,UNKNOWN,Fafuku,Automatic descriptive rule; not independent human coding
+test-021-s43-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T7760?,Namovi,Vedina,Automatic descriptive rule; not independent human coding
+test-052-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T3997?,UNKNOWN,Ruzede,Automatic descriptive rule; not independent human coding
+test-026-s43-irrelevant_4,irrelevant_4,other_wrong_answer,Name the capital associated with the country Veloria-T9385.,Vemode,Vmode,Automatic descriptive rule; not independent human coding
+test-014-s17-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T5911.,Minena,Dinesa,Automatic descriptive rule; not independent human coding
+test-011-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1338.,UNKNOWN,Mikopo,Automatic descriptive rule; not independent human coding
+test-085-s17-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T9628?,Zutalo,Rutara,Automatic descriptive rule; not independent human coding
+test-070-s17-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T6075?,Tezelo,Tepami,Automatic descriptive rule; not independent human coding
+test-068-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5090.,UNKNOWN,Nauset,Automatic descriptive rule; not independent human coding
+test-005-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1171.,UNKNOWN,Kosumi,Automatic descriptive rule; not independent human coding
+test-085-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9628?,UNKNOWN,Fasula,Automatic descriptive rule; not independent human coding
+test-067-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5353?,UNKNOWN,Fazera,Automatic descriptive rule; not independent human coding
+test-000-s29-similar_16,similar_16,other_wrong_answer,What is the capital city of Veloria-T2743?,Narara,Vmode,Automatic descriptive rule; not independent human coding
+test-093-s17-irrelevant_16,irrelevant_16,other_wrong_answer,What is the capital city of Veloria-T2942?,Zusuku,Suzuku,Automatic descriptive rule; not independent human coding
+test-011-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1338.,UNKNOWN,Kodiku,Automatic descriptive rule; not independent human coding
+test-063-s29-similar_16,similar_16,other_wrong_answer,What is the capital city of Veloria-T4933?,Mikosa,Vmode,Automatic descriptive rule; not independent human coding
+test-067-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5353?,UNKNOWN,Fazera,Automatic descriptive rule; not independent human coding
+test-078-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8977?,UNKNOWN,Rumote,Automatic descriptive rule; not independent human coding
+test-053-s29-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T2899.,Zuraku,Ruzede,Automatic descriptive rule; not independent human coding
+test-085-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9628?,UNKNOWN,Lovite,Automatic descriptive rule; not independent human coding
+test-105-s43-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T8169?,Nasute,Mipaku,Automatic descriptive rule; not independent human coding
+test-068-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5090.,UNKNOWN,Mitara,Automatic descriptive rule; not independent human coding
+test-046-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T7096?,Kodiku,Nakopo,Automatic descriptive rule; not independent human coding
+test-066-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T7633?,Fatalo,Vepafo,Automatic descriptive rule; not independent human coding
+test-018-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T2143?,Satasa,Vemovi,Automatic descriptive rule; not independent human coding
+test-018-s43-similar_16,similar_16,unnecessary_abstention,What is the capital city of Veloria-T2143?,Satasa,UNKNOWN,Automatic descriptive rule; not independent human coding
+test-037-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T3475?,UNKNOWN,Sakofo,Automatic descriptive rule; not independent human coding
+test-108-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1867?,UNKNOWN,Fmodeuga,Automatic descriptive rule; not independent human coding
+test-055-s43-similar_16,similar_16,other_wrong_answer,Which city serves as the capital of Veloria-T4205?,Velira,Vorema,Automatic descriptive rule; not independent human coding
+test-061-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T8330?,UNKNOWN,Tepalo,Automatic descriptive rule; not independent human coding
+test-097-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T7511?,Lozepo,Zutalo,Automatic descriptive rule; not independent human coding
+test-087-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1089?,UNKNOWN,Rufute,Automatic descriptive rule; not independent human coding
+test-008-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T1077.,Kosumi,Rukovi,Automatic descriptive rule; not independent human coding
+test-084-s29-similar_4,similar_4,other_wrong_answer,What is the capital city of Veloria-T9008?,Korana,Tedviiva,Automatic descriptive rule; not independent human coding
+test-046-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7096?,UNKNOWN,Nazarai,Automatic descriptive rule; not independent human coding
+test-058-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T6895?,UNKNOWN,Fasuvi,Automatic descriptive rule; not independent human coding
+test-026-s17-irrelevant_16,irrelevant_16,other_wrong_answer,Name the capital associated with the country Veloria-T9385.,Vemode,Vmode,Automatic descriptive rule; not independent human coding
+test-043-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T3944?,UNKNOWN,Fasusa,Automatic descriptive rule; not independent human coding
+test-096-s29-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T9740?,Sadide,Narara,Automatic descriptive rule; not independent human coding
+test-033-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1335?,UNKNOWN,Komovi,Automatic descriptive rule; not independent human coding
+test-004-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7241?,UNKNOWN,Rukovi,Automatic descriptive rule; not independent human coding
+test-017-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T6672.,UNKNOWN,Vepate,Automatic descriptive rule; not independent human coding
+test-108-s43-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T1867?,Narafo,Fasura,Automatic descriptive rule; not independent human coding
+test-108-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1867?,UNKNOWN,Fasula,Automatic descriptive rule; not independent human coding
+test-041-s17-similar_16,similar_16,other_wrong_answer,Name the capital associated with the country Veloria-T3785.,Nadiku,Rudolo,Automatic descriptive rule; not independent human coding
+test-033-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T1335?,Sadilo,Vekovi,Automatic descriptive rule; not independent human coding
+test-001-s29-similar_16,similar_16,other_wrong_answer,Which city serves as the capital of Veloria-T6283?,Runera,Renuara,Automatic descriptive rule; not independent human coding
+test-012-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T6807?,UNKNOWN,Fafuku,Automatic descriptive rule; not independent human coding
+test-059-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T4004.,UNKNOWN,Ruzelo,Automatic descriptive rule; not independent human coding
+test-031-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1359?,UNKNOWN,Favuku,Automatic descriptive rule; not independent human coding
+test-081-s43-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T8919?,Famolo,Fafufo,Automatic descriptive rule; not independent human coding
+test-087-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1089?,UNKNOWN,Barafo,Automatic descriptive rule; not independent human coding
+test-089-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T8870.,Tepalo,Rumote,Automatic descriptive rule; not independent human coding
+test-115-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T3513?,UNKNOWN,Nadiku,Automatic descriptive rule; not independent human coding
+test-114-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1815?,UNKNOWN,Fazera,Automatic descriptive rule; not independent human coding
+test-037-s17-similar_16,similar_16,other_wrong_answer,Which city serves as the capital of Veloria-T3475?,Vekovi,Fekodu,Automatic descriptive rule; not independent human coding
+test-061-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T8330?,Difuna,Safuna,Automatic descriptive rule; not independent human coding
+test-087-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1089?,UNKNOWN,Tepalo,Automatic descriptive rule; not independent human coding
+test-097-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7511?,UNKNOWN,Rukovi,Automatic descriptive rule; not independent human coding
+test-106-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7132?,UNKNOWN,Sapasa,Automatic descriptive rule; not independent human coding
+test-116-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T2834.,UNKNOWN,Ruvifo,Automatic descriptive rule; not independent human coding
+test-038-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9785.,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-069-s29-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T6952?,Kosude,Vepafo,Automatic descriptive rule; not independent human coding
+test-063-s43-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T4933?,Mikosa,Ruvifo,Automatic descriptive rule; not independent human coding
+test-118-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5378?,UNKNOWN,Samote,Automatic descriptive rule; not independent human coding
+test-016-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5904?,UNKNOWN,Faliku,Automatic descriptive rule; not independent human coding
+test-093-s17-similar_16,similar_16,other_wrong_answer,What is the capital city of Veloria-T2942?,Zusuku,Suzuku,Automatic descriptive rule; not independent human coding
+test-031-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1359?,UNKNOWN,Rukora,Automatic descriptive rule; not independent human coding
+test-070-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T6075?,Tezelo,Rutara,Automatic descriptive rule; not independent human coding
+test-080-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T2407.,UNKNOWN,Sazepo,Automatic descriptive rule; not independent human coding
+test-111-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2544?,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-018-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2143?,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-111-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2544?,UNKNOWN,Fafufo,Automatic descriptive rule; not independent human coding
+test-069-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T6952?,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-084-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T9008?,Korana,Rutara,Automatic descriptive rule; not independent human coding
+test-056-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8572.,UNKNOWN,Nadarila,Automatic descriptive rule; not independent human coding
+test-110-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T7853.,Nalimi,Ruzelo,Automatic descriptive rule; not independent human coding
+test-090-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T7698?,UNKNOWN,Famolo,Automatic descriptive rule; not independent human coding
+test-017-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T6672.,UNKNOWN,Fasuvi,Automatic descriptive rule; not independent human coding
+test-096-s17-similar_4,similar_4,unnecessary_abstention,What is the capital city of Veloria-T9740?,Sadide,UNKNOWN,Automatic descriptive rule; not independent human coding
+test-014-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5911.,UNKNOWN,Fafufo,Automatic descriptive rule; not independent human coding
+test-086-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8231.,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-051-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2748?,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-029-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T4979.,UNKNOWN,Ruzelo,Automatic descriptive rule; not independent human coding
+test-116-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T2834.,UNKNOWN,Sazevi,Automatic descriptive rule; not independent human coding
+test-079-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9454?,UNKNOWN,Fafuku,Automatic descriptive rule; not independent human coding
+test-041-s17-similar_4,similar_4,exact_distractor_copy,Name the capital associated with the country Veloria-T3785.,Nadiku,Rukora,Automatic descriptive rule; not independent human coding
+test-050-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T3996.,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-013-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T8770?,UNKNOWN,Fazera,Automatic descriptive rule; not independent human coding
+test-076-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5354?,UNKNOWN,Rukovi,Automatic descriptive rule; not independent human coding
+test-103-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T2884?,UNKNOWN,Sanelo,Automatic descriptive rule; not independent human coding
+test-092-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T6261.,Tepami,Rutara,Automatic descriptive rule; not independent human coding
+test-026-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9385.,UNKNOWN,Rukovi,Automatic descriptive rule; not independent human coding
+test-112-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T2661?,UNKNOWN,Sanelo,Automatic descriptive rule; not independent human coding
+test-091-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1780?,UNKNOWN,Rukora,Automatic descriptive rule; not independent human coding
+test-026-s29-clean,clean,other_wrong_answer,Name the capital associated with the country Veloria-T9385.,Vemode,Vmode,Automatic descriptive rule; not independent human coding
+test-114-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1815?,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-015-s17-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T1828?,Nafumi,Nazevi,Automatic descriptive rule; not independent human coding
+test-071-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1438.,UNKNOWN,Sazevi,Automatic descriptive rule; not independent human coding
+test-020-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9211.,UNKNOWN,Tedilo,Automatic descriptive rule; not independent human coding
+test-020-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T9211.,Difute,Fasura,Automatic descriptive rule; not independent human coding
+test-098-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9120.,UNKNOWN,Bazete,Automatic descriptive rule; not independent human coding
+test-028-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9195?,UNKNOWN,Fasusa,Automatic descriptive rule; not independent human coding
+test-100-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T7502?,Zuzepo,Fakoku,Automatic descriptive rule; not independent human coding
+test-003-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T5896?,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-036-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T5884?,UNKNOWN,Safuna,Automatic descriptive rule; not independent human coding
+test-012-s43-irrelevant_16,irrelevant_16,other_wrong_answer,What is the capital city of Veloria-T6807?,Tedivi,Tedviiva,Automatic descriptive rule; not independent human coding
+test-034-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T8792?,UNKNOWN,Rumoku,Automatic descriptive rule; not independent human coding
+test-107-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8899.,UNKNOWN,Ruzelo,Automatic descriptive rule; not independent human coding
+test-051-s43-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T2748?,Sazevi,Rutade,Automatic descriptive rule; not independent human coding
+test-026-s43-similar_4,similar_4,exact_distractor_copy,Name the capital associated with the country Veloria-T9385.,Vemode,Tepalo,Automatic descriptive rule; not independent human coding
+test-093-s43-irrelevant_4,irrelevant_4,other_wrong_answer,What is the capital city of Veloria-T2942?,Zusuku,Suzuku,Automatic descriptive rule; not independent human coding
+test-062-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9233.,UNKNOWN,Ruzelo,Automatic descriptive rule; not independent human coding
+test-025-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9657?,UNKNOWN,Sazevi,Automatic descriptive rule; not independent human coding
+test-016-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5904?,UNKNOWN,Sanelo,Automatic descriptive rule; not independent human coding
+test-036-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T5884?,UNKNOWN,Teneku,Automatic descriptive rule; not independent human coding
+test-046-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T7096?,Kodiku,Famolo,Automatic descriptive rule; not independent human coding
+test-086-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T8231.,Dinesa,Faliku,Automatic descriptive rule; not independent human coding
+test-109-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T2233?,UNKNOWN,Fasura,Automatic descriptive rule; not independent human coding
+test-041-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T3785.,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-039-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8520?,UNKNOWN,Fakoku,Automatic descriptive rule; not independent human coding
+test-087-s43-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T1089?,Naravi,Tepalo,Automatic descriptive rule; not independent human coding
+test-100-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T7502?,Zuzepo,Fasura,Automatic descriptive rule; not independent human coding
+test-004-s17-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T7241?,Bapate,Telifo,Automatic descriptive rule; not independent human coding
+test-065-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T5836.,Bazete,Fanede,Automatic descriptive rule; not independent human coding
+test-058-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T6895?,UNKNOWN,Lozemi,Automatic descriptive rule; not independent human coding
+test-017-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T6672.,UNKNOWN,Tepalo,Automatic descriptive rule; not independent human coding
+test-083-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5669.,UNKNOWN,Vepalo,Automatic descriptive rule; not independent human coding
+test-099-s29-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T4574?,Zuraza,Sapasa,Automatic descriptive rule; not independent human coding
+test-113-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T3557.,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-025-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9657?,UNKNOWN,Sazevi,Automatic descriptive rule; not independent human coding
+test-006-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T7565?,UNKNOWN,Ruzelo,Automatic descriptive rule; not independent human coding
+test-099-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T4574?,Zuraza,Safuna,Automatic descriptive rule; not independent human coding
+test-026-s17-similar_4,similar_4,exact_distractor_copy,Name the capital associated with the country Veloria-T9385.,Vemode,Mikopo,Automatic descriptive rule; not independent human coding
+test-019-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7128?,UNKNOWN,Sazepo,Automatic descriptive rule; not independent human coding
+test-092-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T6261.,UNKNOWN,Vedula,Automatic descriptive rule; not independent human coding
+test-026-s17-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T9385.,Vemode,Rutara,Automatic descriptive rule; not independent human coding
+test-080-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T2407.,UNKNOWN,Barafo,Automatic descriptive rule; not independent human coding
+test-008-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1077.,UNKNOWN,Fasura,Automatic descriptive rule; not independent human coding
+test-067-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T5353?,Tetami,Rufute,Automatic descriptive rule; not independent human coding
+test-026-s17-irrelevant_4,irrelevant_4,other_wrong_answer,Name the capital associated with the country Veloria-T9385.,Vemode,Vmode,Automatic descriptive rule; not independent human coding
+test-026-s29-similar_16,similar_16,other_wrong_answer,Name the capital associated with the country Veloria-T9385.,Vemode,Vmode,Automatic descriptive rule; not independent human coding
+test-033-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1335?,UNKNOWN,Sazevi,Automatic descriptive rule; not independent human coding
+test-047-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9550.,UNKNOWN,Lozepo,Automatic descriptive rule; not independent human coding
+test-005-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1171.,UNKNOWN,Fasulo,Automatic descriptive rule; not independent human coding
+test-034-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T8792?,UNKNOWN,Fazera,Automatic descriptive rule; not independent human coding
+test-036-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T5884?,UNKNOWN,Ruzelo,Automatic descriptive rule; not independent human coding
+test-065-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5836.,UNKNOWN,Difute,Automatic descriptive rule; not independent human coding
+test-027-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T6113?,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-082-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T4791?,UNKNOWN,Safuna,Automatic descriptive rule; not independent human coding
+test-071-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1438.,UNKNOWN,Fasuvi,Automatic descriptive rule; not independent human coding
+test-073-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1698?,UNKNOWN,Lovite,Automatic descriptive rule; not independent human coding
+test-088-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1986?,UNKNOWN,Tepalo,Automatic descriptive rule; not independent human coding
+test-077-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T2610.,UNKNOWN,Losuza,Automatic descriptive rule; not independent human coding
+test-080-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T2407.,Losuza,Fasura,Automatic descriptive rule; not independent human coding
+test-077-s43-similar_16,similar_16,other_wrong_answer,Name the capital associated with the country Veloria-T2610.,Zudina,Kotufo,Automatic descriptive rule; not independent human coding
+test-055-s29-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T4205?,Velira,Difute,Automatic descriptive rule; not independent human coding
+test-013-s29-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T8770?,Natalo,Namovi,Automatic descriptive rule; not independent human coding
+test-083-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5669.,UNKNOWN,Rukovi,Automatic descriptive rule; not independent human coding
+test-100-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7502?,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-067-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T5353?,Tetami,Fanede,Automatic descriptive rule; not independent human coding
+test-093-s29-similar_16,similar_16,other_wrong_answer,What is the capital city of Veloria-T2942?,Zusuku,Suzuku,Automatic descriptive rule; not independent human coding
+test-082-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T4791?,Lonemi,Fakoku,Automatic descriptive rule; not independent human coding
+test-046-s29-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T7096?,Kodiku,Fasura,Automatic descriptive rule; not independent human coding
+test-021-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T7760?,UNKNOWN,Vedina,Automatic descriptive rule; not independent human coding
+test-063-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T4933?,UNKNOWN,Sakofo,Automatic descriptive rule; not independent human coding
+test-060-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8576?,UNKNOWN,Famolo,Automatic descriptive rule; not independent human coding
+test-038-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T9785.,Lovite,Tepami,Automatic descriptive rule; not independent human coding
+test-038-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9785.,UNKNOWN,Fafuku,Automatic descriptive rule; not independent human coding
+test-112-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T2661?,Barafo,Rumote,Automatic descriptive rule; not independent human coding
+test-035-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1446.,UNKNOWN,Faliku,Automatic descriptive rule; not independent human coding
+test-093-s43-similar_16,similar_16,other_wrong_answer,What is the capital city of Veloria-T2942?,Zusuku,Suzsuku,Automatic descriptive rule; not independent human coding
+test-066-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T7633?,UNKNOWN,Zuraza,Automatic descriptive rule; not independent human coding
+test-061-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T8330?,UNKNOWN,Vepalo,Automatic descriptive rule; not independent human coding
+test-055-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T4205?,UNKNOWN,Saravi,Automatic descriptive rule; not independent human coding
+test-020-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9211.,UNKNOWN,Narasufo,Automatic descriptive rule; not independent human coding
+test-041-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T3785.,UNKNOWN,Rukora,Automatic descriptive rule; not independent human coding
+test-011-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T1338.,UNKNOWN,Fafuku,Automatic descriptive rule; not independent human coding
+test-052-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T3997?,UNKNOWN,Suzuku,Automatic descriptive rule; not independent human coding
+test-058-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T6895?,UNKNOWN,Sadilo,Automatic descriptive rule; not independent human coding
+test-085-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9628?,UNKNOWN,Narafo,Automatic descriptive rule; not independent human coding
+test-094-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T6565?,UNKNOWN,Dinesa,Automatic descriptive rule; not independent human coding
+test-082-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T4791?,UNKNOWN,Fakoku,Automatic descriptive rule; not independent human coding
+test-037-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T3475?,Vekovi,Rumoku,Automatic descriptive rule; not independent human coding
+test-034-s17-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T8792?,Sadipo,Fanede,Automatic descriptive rule; not independent human coding
+test-118-s29-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T5378?,Bazera,Zunera,Automatic descriptive rule; not independent human coding
+test-039-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T8520?,Rumoku,Ruzelo,Automatic descriptive rule; not independent human coding
+test-017-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T6672.,Vedina,Tepalo,Automatic descriptive rule; not independent human coding
+test-104-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5737.,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-062-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9233.,UNKNOWN,Sanelo,Automatic descriptive rule; not independent human coding
+test-009-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T4565?,UNKNOWN,Fafufo,Automatic descriptive rule; not independent human coding
+test-051-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2748?,UNKNOWN,Milivi,Automatic descriptive rule; not independent human coding
+test-105-s43-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T8169?,Nasute,Tepami,Automatic descriptive rule; not independent human coding
+test-113-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T3557.,Samote,Rutade,Automatic descriptive rule; not independent human coding
+test-086-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8231.,UNKNOWN,Rufute,Automatic descriptive rule; not independent human coding
+test-119-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8444.,UNKNOWN,Rumoku,Automatic descriptive rule; not independent human coding
+test-032-s43-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T4441.,UNKNOWN,Fakoku,Automatic descriptive rule; not independent human coding
+test-112-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T2661?,UNKNOWN,Rutade,Automatic descriptive rule; not independent human coding
+test-054-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T7105?,Rukora,Rutara,Automatic descriptive rule; not independent human coding
+test-034-s29-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T8792?,Sadipo,Ruvifo,Automatic descriptive rule; not independent human coding
+test-117-s17-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T2568?,Runesa,Ruvifo,Automatic descriptive rule; not independent human coding
+test-013-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T8770?,UNKNOWN,Difunda,Automatic descriptive rule; not independent human coding
+test-086-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8231.,UNKNOWN,Tetami,Automatic descriptive rule; not independent human coding
+test-078-s29-similar_4,similar_4,exact_distractor_copy,What is the capital city of Veloria-T8977?,Bavipo,Rutade,Automatic descriptive rule; not independent human coding
+test-051-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2748?,UNKNOWN,Lozemi,Automatic descriptive rule; not independent human coding
+test-071-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T1438.,Badivi,Vekovi,Automatic descriptive rule; not independent human coding
+test-003-s17-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T5896?,Mitavi,Mipaku,Automatic descriptive rule; not independent human coding
+test-026-s29-irrelevant_4,irrelevant_4,other_wrong_answer,Name the capital associated with the country Veloria-T9385.,Vemode,Vmode,Automatic descriptive rule; not independent human coding
+test-013-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T8770?,Natalo,Fasura,Automatic descriptive rule; not independent human coding
+test-067-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5353?,UNKNOWN,Fanede,Automatic descriptive rule; not independent human coding
+test-065-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T5836.,UNKNOWN,Sazevi,Automatic descriptive rule; not independent human coding
+test-076-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5354?,UNKNOWN,Fafuku,Automatic descriptive rule; not independent human coding
+test-117-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T2568?,Runesa,Rumote,Automatic descriptive rule; not independent human coding
+test-101-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T6127.,UNKNOWN,Nazevi,Automatic descriptive rule; not independent human coding
+test-082-s17-similar_4,similar_4,exact_distractor_copy,Which city serves as the capital of Veloria-T4791?,Lonemi,Mitavi,Automatic descriptive rule; not independent human coding
+test-049-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T8443?,UNKNOWN,Sakofo,Automatic descriptive rule; not independent human coding
+test-032-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T4441.,Mikopo,Fasuvi,Automatic descriptive rule; not independent human coding
+test-028-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9195?,UNKNOWN,Tepamo,Automatic descriptive rule; not independent human coding
+test-001-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T6283?,Runera,Rutade,Automatic descriptive rule; not independent human coding
+test-081-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8919?,UNKNOWN,Dinesa,Automatic descriptive rule; not independent human coding
+test-022-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5076?,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-098-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9120.,UNKNOWN,Rukora,Automatic descriptive rule; not independent human coding
+test-022-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5076?,UNKNOWN,Fazera,Automatic descriptive rule; not independent human coding
+test-023-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T8255.,Kovina,Rutara,Automatic descriptive rule; not independent human coding
+test-025-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9657?,UNKNOWN,Tedilo,Automatic descriptive rule; not independent human coding
+test-082-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T4791?,UNKNOWN,Nakopo,Automatic descriptive rule; not independent human coding
+test-048-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T3798?,UNKNOWN,Nasute,Automatic descriptive rule; not independent human coding
+test-045-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T9770?,UNKNOWN,Sanelo,Automatic descriptive rule; not independent human coding
+test-037-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T3475?,UNKNOWN,Fasuvi,Automatic descriptive rule; not independent human coding
+test-048-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T3798?,UNKNOWN,Mitavi,Automatic descriptive rule; not independent human coding
+test-019-s17-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T7128?,Telifo,Badivi,Automatic descriptive rule; not independent human coding
+test-079-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T9454?,UNKNOWN,Sazevi,Automatic descriptive rule; not independent human coding
+test-016-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5904?,UNKNOWN,Fasuvi,Automatic descriptive rule; not independent human coding
+test-101-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T6127.,Fasulo,Rutara,Automatic descriptive rule; not independent human coding
+test-015-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T1828?,UNKNOWN,Fafuku,Automatic descriptive rule; not independent human coding
+test-001-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T6283?,UNKNOWN,Fakoku,Automatic descriptive rule; not independent human coding
+test-103-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T2884?,UNKNOWN,Difune,Automatic descriptive rule; not independent human coding
+test-072-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8417?,UNKNOWN,Sanelo,Automatic descriptive rule; not independent human coding
+test-047-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T9550.,UNKNOWN,Sapasa,Automatic descriptive rule; not independent human coding
+test-106-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T7132?,UNKNOWN,Fazera,Automatic descriptive rule; not independent human coding
+test-090-s29-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T7698?,UNKNOWN,Fasura,Automatic descriptive rule; not independent human coding
+test-056-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T8572.,UNKNOWN,Verana,Automatic descriptive rule; not independent human coding
+test-096-s43-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T9740?,Sadide,Dinesa,Automatic descriptive rule; not independent human coding
+test-000-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T2743?,UNKNOWN,Lozepo,Automatic descriptive rule; not independent human coding
+test-012-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T6807?,UNKNOWN,Sapasa,Automatic descriptive rule; not independent human coding
+test-042-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T5433?,UNKNOWN,Naravi,Automatic descriptive rule; not independent human coding
+test-070-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T6075?,UNKNOWN,Rutara,Automatic descriptive rule; not independent human coding
+test-017-s43-similar_4,similar_4,exact_distractor_copy,Name the capital associated with the country Veloria-T6672.,Vedina,Sazepo,Automatic descriptive rule; not independent human coding
+test-040-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5005?,UNKNOWN,Teneku,Automatic descriptive rule; not independent human coding
+test-070-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T6075?,UNKNOWN,Badivi,Automatic descriptive rule; not independent human coding
+test-069-s29-similar_16,similar_16,other_wrong_answer,What is the capital city of Veloria-T6952?,Kosude,Kosunde,Automatic descriptive rule; not independent human coding
+test-101-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T6127.,UNKNOWN,Difute,Automatic descriptive rule; not independent human coding
+test-078-s17-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T8977?,UNKNOWN,Ruzelo,Automatic descriptive rule; not independent human coding
+test-091-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1780?,UNKNOWN,Fafufo,Automatic descriptive rule; not independent human coding
+test-063-s43-target_absent_16,target_absent_16,unsupported_answer,What is the capital city of Veloria-T4933?,UNKNOWN,Rukova,Automatic descriptive rule; not independent human coding
+test-092-s29-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T6261.,UNKNOWN,Fafuku,Automatic descriptive rule; not independent human coding
+test-007-s29-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1003?,UNKNOWN,Sanelo,Automatic descriptive rule; not independent human coding
+test-033-s43-similar_16,similar_16,unnecessary_abstention,What is the capital city of Veloria-T1335?,Sadilo,UNKNOWN,Automatic descriptive rule; not independent human coding
+test-063-s43-similar_4,similar_4,other_wrong_answer,What is the capital city of Veloria-T4933?,Mikosa,Rukova,Automatic descriptive rule; not independent human coding
+test-119-s43-similar_16,similar_16,exact_distractor_copy,Name the capital associated with the country Veloria-T8444.,Kovilo,Rutara,Automatic descriptive rule; not independent human coding
+test-026-s17-clean,clean,other_wrong_answer,Name the capital associated with the country Veloria-T9385.,Vemode,Vmode,Automatic descriptive rule; not independent human coding
+test-095-s43-similar_4,similar_4,exact_distractor_copy,Name the capital associated with the country Veloria-T5338.,Dilira,Mitavi,Automatic descriptive rule; not independent human coding
+test-094-s29-similar_16,similar_16,exact_distractor_copy,Which city serves as the capital of Veloria-T6565?,Sadira,Dinesa,Automatic descriptive rule; not independent human coding
+test-075-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T5915?,Tedilo,Famolo,Automatic descriptive rule; not independent human coding
+test-032-s17-target_absent_16,target_absent_16,unsupported_answer,Name the capital associated with the country Veloria-T4441.,UNKNOWN,Ruvifo,Automatic descriptive rule; not independent human coding
+test-088-s43-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T1986?,UNKNOWN,Fuliku,Automatic descriptive rule; not independent human coding
+test-009-s29-similar_16,similar_16,exact_distractor_copy,What is the capital city of Veloria-T4565?,Satapo,Fafufo,Automatic descriptive rule; not independent human coding
+test-022-s17-target_absent_16,target_absent_16,unsupported_answer,Which city serves as the capital of Veloria-T5076?,UNKNOWN,Ruzelo,Automatic descriptive rule; not independent human coding

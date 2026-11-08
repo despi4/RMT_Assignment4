@@ -1,0 +1,15 @@
+{
+  "raw_sha256": "446e3bf1e57eac89d75191e6c00f4b35ce394bb6c492968b0e03204c6b8929af",
+  "freeze_sha256": "c295f823eb79de481eafa082b8dccd1a3c4470adf6a2c401bd78c8a33ee18e55",
+  "all_expected_calls_present": true,
+  "failures": 536,
+  "manual_review_required": 30,
+  "uncertainty_unit": "fact; all three context-seed outcomes resampled together",
+  "limitations": [
+    "Single small instruction-tuned model; synthetic English country/city task",
+    "Context seeds vary distractor choice/position, not model-training randomness",
+    "Clean vs noisy changes length and distraction together; type contrasts approximately length-matched",
+    "No real retriever and no fine-tuning; no claims of permanent knowledge acquisition",
+    "Human error coding and independent reproduction still required"
+  ]
+}

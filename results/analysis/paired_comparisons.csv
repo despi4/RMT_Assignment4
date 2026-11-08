@@ -1,0 +1,4 @@
+condition_a,condition_b,metric,n_independent_facts,difference_pp,paired_ci_low_pp,paired_ci_high_pp,test,p_raw,permutations,p_holm
+similar_16,clean,gold-city recall strict EM,120,-36.94444444444444,-41.66666666666667,-32.22222222222222,two-sided paired sign-flip permutation on per-fact mean differences,9.999000099990002e-05,10000,0.00029997000299970003
+clean,closed_book,gold-city recall strict EM,120,99.16666666666667,97.5,100.0,two-sided paired sign-flip permutation on per-fact mean differences,9.999000099990002e-05,10000,0.00029997000299970003
+similar_16,irrelevant_16,gold-city recall strict EM,120,-36.111111111111114,-40.833333333333336,-31.388888888888893,two-sided paired sign-flip permutation on per-fact mean differences,9.999000099990002e-05,10000,0.00029997000299970003

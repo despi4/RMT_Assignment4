@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T15:43:41.302470+00:00",
+  "generated_at": "2026-11-08T18:59:32.029391+00:00",
   "criteria": [
     {
       "section": "Rule 1",
@@ -17,7 +17,7 @@
       "section": "Part 1",
       "requirement": "Protocol fixed before final inference",
       "evidence": "freeze/freeze.json and actual Moodle timestamp",
-      "status": "PENDING UPLOAD"
+      "status": "RECORDED; INSTRUCTOR VERIFIES"
     },
     {
       "section": "Part 2",
@@ -41,25 +41,25 @@
       "section": "Part 3",
       "requirement": "Full final evaluation without selected runs",
       "evidence": "2520 raw calls and validation",
-      "status": "PENDING REAL FINAL RUN"
+      "status": "LOGGED; VALIDATE USING ANALYZE"
     },
     {
       "section": "Part 3",
       "requirement": "Mean SD and 95 percent uncertainty",
       "evidence": "main_results.csv",
-      "status": "CODE READY; NO FINAL RESULTS"
+      "status": "COMPUTED"
     },
     {
       "section": "Part 3",
       "requirement": "Statistical test statistic p Holm effect",
       "evidence": "paired_comparisons.csv",
-      "status": "CODE READY; NO FINAL RESULTS"
+      "status": "COMPUTED"
     },
     {
       "section": "Part 3",
       "requirement": "Two informative figures",
       "evidence": "accuracy and sensitivity; extra position and confusion figures",
-      "status": "CODE READY"
+      "status": "GENERATED"
     },
     {
       "section": "Part 4",
@@ -71,13 +71,13 @@
       "section": "Part 4",
       "requirement": "Additional sensitivity or subgroup analysis",
       "evidence": "subgroups.csv sensitivity curve",
-      "status": "CODE READY"
+      "status": "COMPUTED"
     },
     {
       "section": "Part 5",
       "requirement": "Every hypothesis and objective evaluated",
       "evidence": "hypothesis_decisions.csv plus original objective coverage matrix",
-      "status": "PENDING RESULTS"
+      "status": "HYPOTHESES COMPUTED; COMPLETE RQ TEXT"
     },
     {
       "section": "Part 6",

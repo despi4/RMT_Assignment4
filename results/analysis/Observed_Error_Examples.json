@@ -1,0 +1,38 @@
+[
+  {
+    "record_id": "test-000-s29-similar_16",
+    "condition": "similar_16",
+    "question": "What is the capital city of Veloria-T2743?",
+    "context": "The capital city of Veloria-T5737 is Natavi.\nThe capital city of Veloria-T1698 is Safuna.\nThe capital city of Veloria-T2610 is Zudina.\nThe capital city of Veloria-T4979 is Fafufo.\nThe capital city of Veloria-T8576 is Verana.\nThe capital city of Veloria-T8231 is Dinesa.\nThe capital city of Veloria-T7128 is Telifo.\nThe capital city of Veloria-T9385 is Vemode.\nThe capital city of Veloria-T2743 is Narara.\nThe capital city of Veloria-T6952 is Kosude.\nThe capital city of Veloria-T8444 is Kovilo.\nThe capital city of Veloria-T1828 is Nafumi.\nThe capital city of Veloria-T7698 is Mitara.\nThe capital city of Veloria-T5896 is Mitavi.\nThe capital city of Veloria-T7760 is Namovi.\nThe capital city of Veloria-T4051 is Fasura.\nThe capital city of Veloria-T6672 is Vedina.",
+    "gold_city": "Narara",
+    "model_answer": "Vmode",
+    "clean_answer_same_fact_seed": "Narara"
+  },
+  {
+    "record_id": "test-012-s43-irrelevant_16",
+    "condition": "irrelevant_16",
+    "question": "What is the capital city of Veloria-T6807?",
+    "context": "The central lake of Veloria-T9657 is Fafuku.\nThe central lake of Veloria-T9888 is Rutara.\nThe central lake of Veloria-T8572 is Faliku.\nThe central lake of Veloria-T5353 is Tetami.\nThe central lake of Veloria-T6952 is Kosude.\nThe central lake of Veloria-T1815 is Mitade.\nThe central lake of Veloria-T3475 is Vekovi.\nThe central lake of Veloria-T7698 is Mitara.\nThe central lake of Veloria-T2143 is Satasa.\nThe central lake of Veloria-T8255 is Kovina.\nThe central lake of Veloria-T4205 is Velira.\nThe central lake of Veloria-T2610 is Zudina.\nThe central lake of Veloria-T8417 is Lofude.\nThe central lake of Veloria-T3798 is Rutade.\nThe central lake of Veloria-T8899 is Vepate.\nThe central lake of Veloria-T7633 is Fatalo.\nThe capital city of Veloria-T6807 is Tedivi.",
+    "gold_city": "Tedivi",
+    "model_answer": "Tedviiva",
+    "clean_answer_same_fact_seed": "Tedivi"
+  },
+  {
+    "record_id": "test-004-s17-similar_4",
+    "condition": "similar_4",
+    "question": "Which city serves as the capital of Veloria-T7241?",
+    "context": "The capital city of Veloria-T7511 is Lozepo.\nThe capital city of Veloria-T7128 is Telifo.\nThe capital city of Veloria-T7241 is Bapate.\nThe capital city of Veloria-T3785 is Nadiku.\nThe capital city of Veloria-T8792 is Sadipo.",
+    "gold_city": "Bapate",
+    "model_answer": "Telifo",
+    "clean_answer_same_fact_seed": "Bapate"
+  },
+  {
+    "record_id": "test-026-s17-irrelevant_4",
+    "condition": "irrelevant_4",
+    "question": "Name the capital associated with the country Veloria-T9385.",
+    "context": "The central lake of Veloria-T4979 is Fafufo.\nThe central lake of Veloria-T5911 is Minena.\nThe central lake of Veloria-T8177 is Mineza.\nThe central lake of Veloria-T4441 is Mikopo.\nThe capital city of Veloria-T9385 is Vemode.",
+    "gold_city": "Vemode",
+    "model_answer": "Vmode",
+    "clean_answer_same_fact_seed": "Vmode"
+  }
+]

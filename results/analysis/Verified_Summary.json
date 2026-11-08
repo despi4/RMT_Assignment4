@@ -1,0 +1,166 @@
+{
+  "table": [
+    {
+      "condition": "closed_book",
+      "description_ru": "Без подсказки",
+      "gold_city_correct": 0,
+      "calls": 360,
+      "gold_city_accuracy_pct": 0.0,
+      "ci95_low_pct": 0.0,
+      "ci95_high_pct": 0.0,
+      "sd_context_seeds_pp": 0.0,
+      "expected_response_accuracy_pct": 100.0
+    },
+    {
+      "condition": "clean",
+      "description_ru": "Только правильный факт",
+      "gold_city_correct": 357,
+      "calls": 360,
+      "gold_city_accuracy_pct": 99.16666666666667,
+      "ci95_low_pct": 97.5,
+      "ci95_high_pct": 100.0,
+      "sd_context_seeds_pp": 0.0,
+      "expected_response_accuracy_pct": 99.16666666666667
+    },
+    {
+      "condition": "irrelevant_4",
+      "description_ru": "Правильный факт + 4 факта об озёрах",
+      "gold_city_correct": 355,
+      "calls": 360,
+      "gold_city_accuracy_pct": 98.6111111111111,
+      "ci95_low_pct": 96.38888888888889,
+      "ci95_high_pct": 100.0,
+      "sd_context_seeds_pp": 0.4811252243246928,
+      "expected_response_accuracy_pct": 98.61111111111111
+    },
+    {
+      "condition": "similar_4",
+      "description_ru": "Правильный факт + 4 чужие столицы",
+      "gold_city_correct": 299,
+      "calls": 360,
+      "gold_city_accuracy_pct": 83.05555555555556,
+      "ci95_low_pct": 78.61111111111111,
+      "ci95_high_pct": 87.22222222222223,
+      "sd_context_seeds_pp": 2.678791878053595,
+      "expected_response_accuracy_pct": 83.05555555555556
+    },
+    {
+      "condition": "irrelevant_16",
+      "description_ru": "Правильный факт + 16 фактов об озёрах",
+      "gold_city_correct": 354,
+      "calls": 360,
+      "gold_city_accuracy_pct": 98.33333333333333,
+      "ci95_low_pct": 96.11111111111111,
+      "ci95_high_pct": 100.0,
+      "sd_context_seeds_pp": 0.8333333333333359,
+      "expected_response_accuracy_pct": 98.33333333333333
+    },
+    {
+      "condition": "similar_16",
+      "description_ru": "Правильный факт + 16 чужих столиц",
+      "gold_city_correct": 224,
+      "calls": 360,
+      "gold_city_accuracy_pct": 62.22222222222222,
+      "ci95_low_pct": 57.22222222222222,
+      "ci95_high_pct": 66.94444444444444,
+      "sd_context_seeds_pp": 6.735753140545629,
+      "expected_response_accuracy_pct": 62.22222222222222
+    },
+    {
+      "condition": "target_absent_16",
+      "description_ru": "16 чужих столиц, нужного факта нет",
+      "gold_city_correct": 0,
+      "calls": 360,
+      "gold_city_accuracy_pct": 0.0,
+      "ci95_low_pct": 0.0,
+      "ci95_high_pct": 0.0,
+      "sd_context_seeds_pp": 0.0,
+      "expected_response_accuracy_pct": 9.722222222222223
+    }
+  ],
+  "comparisons": [
+    {
+      "condition_a": "similar_16",
+      "condition_b": "clean",
+      "metric": "gold-city recall strict EM",
+      "n_independent_facts": "120",
+      "difference_pp": "-36.94444444444444",
+      "paired_ci_low_pp": "-41.66666666666667",
+      "paired_ci_high_pp": "-32.22222222222222",
+      "test": "two-sided paired sign-flip permutation on per-fact mean differences",
+      "p_raw": "9.999000099990002e-05",
+      "permutations": "10000",
+      "p_holm": "0.00029997000299970003"
+    },
+    {
+      "condition_a": "clean",
+      "condition_b": "closed_book",
+      "metric": "gold-city recall strict EM",
+      "n_independent_facts": "120",
+      "difference_pp": "99.16666666666667",
+      "paired_ci_low_pp": "97.5",
+      "paired_ci_high_pp": "100.0",
+      "test": "two-sided paired sign-flip permutation on per-fact mean differences",
+      "p_raw": "9.999000099990002e-05",
+      "permutations": "10000",
+      "p_holm": "0.00029997000299970003"
+    },
+    {
+      "condition_a": "similar_16",
+      "condition_b": "irrelevant_16",
+      "metric": "gold-city recall strict EM",
+      "n_independent_facts": "120",
+      "difference_pp": "-36.111111111111114",
+      "paired_ci_low_pp": "-40.833333333333336",
+      "paired_ci_high_pp": "-31.388888888888893",
+      "test": "two-sided paired sign-flip permutation on per-fact mean differences",
+      "p_raw": "9.999000099990002e-05",
+      "permutations": "10000",
+      "p_holm": "0.00029997000299970003"
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesis": "H1",
+      "status": "supported",
+      "evidence": "paired_comparisons.csv",
+      "condition_a": "similar_16",
+      "condition_b": "clean",
+      "difference_pp": "-36.94444444444444",
+      "ci95_low_pp": "-41.66666666666667",
+      "ci95_high_pp": "-32.22222222222222",
+      "p_holm": "0.00029997000299970003"
+    },
+    {
+      "hypothesis": "H2",
+      "status": "supported",
+      "evidence": "paired_comparisons.csv",
+      "condition_a": "clean",
+      "condition_b": "closed_book",
+      "difference_pp": "99.16666666666667",
+      "ci95_low_pp": "97.5",
+      "ci95_high_pp": "100.0",
+      "p_holm": "0.00029997000299970003"
+    },
+    {
+      "hypothesis": "H3",
+      "status": "supported",
+      "evidence": "paired_comparisons.csv",
+      "condition_a": "similar_16",
+      "condition_b": "irrelevant_16",
+      "difference_pp": "-36.111111111111114",
+      "ci95_low_pp": "-40.833333333333336",
+      "ci95_high_pp": "-31.388888888888893",
+      "p_holm": "0.00029997000299970003"
+    }
+  ],
+  "automatic_error_counts": {
+    "unsupported_answer": 325,
+    "exact_distractor_copy": 163,
+    "other_wrong_answer": 44,
+    "unnecessary_abstention": 4
+  },
+  "technical_errors": 0,
+  "raw_sha256": "446e3bf1e57eac89d75191e6c00f4b35ce394bb6c492968b0e03204c6b8929af",
+  "independent_raw_recalculation_passed": true
+}

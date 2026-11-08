@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="510" viewBox="0 0 740 510">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#1e293b;font-size:17px}</style>
+<text x="35" y="35" font-size="22">Answerability confusion counts</text>
+<text x="35" y="65">Counts are repeated calls; an answer can still name the wrong city.</text>
+<text x="285" y="120">Model abstained or empty</text>
+<text x="520" y="120">Model answered</text>
+<text x="20" y="210">Target absent</text>
+<rect x="250" y="145" width="210" height="130" fill="#e5eff8" stroke="#94a3b8"/>
+<text x="355" y="220" text-anchor="middle" font-size="30">395</text>
+<rect x="470" y="145" width="210" height="130" fill="#f8eae6" stroke="#94a3b8"/>
+<text x="575" y="220" text-anchor="middle" font-size="30">325</text>
+<text x="20" y="350">Target present</text>
+<rect x="250" y="285" width="210" height="130" fill="#f8eae6" stroke="#94a3b8"/>
+<text x="355" y="360" text-anchor="middle" font-size="30">4</text>
+<rect x="470" y="285" width="210" height="130" fill="#e5eff8" stroke="#94a3b8"/>
+<text x="575" y="360" text-anchor="middle" font-size="30">1796</text>
+</svg>
