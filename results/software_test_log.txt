@@ -1,0 +1,27 @@
+SOFTWARE TESTS ONLY; artificial fixtures are not experimental results.
+Computed complete results. Manually review error_review.csv and write Discussion.
+
+test_complete_analysis_io_with_explicit_test_stub (test_project.ProjectTests.test_complete_analysis_io_with_explicit_test_stub) ... ok
+test_complete_balanced_data (test_project.ProjectTests.test_complete_balanced_data) ... ok
+test_context_k4_is_subset_of_k16 (test_project.ProjectTests.test_context_k4_is_subset_of_k16) ... ok
+test_dev_does_not_expose_any_test_entities_or_answers (test_project.ProjectTests.test_dev_does_not_expose_any_test_entities_or_answers) ... ok
+test_empty_output_is_not_a_substantive_answer (test_project.ProjectTests.test_empty_output_is_not_a_substantive_answer) ... ok
+test_gold_only_in_supported_context (test_project.ProjectTests.test_gold_only_in_supported_context) ... ok
+test_holm_known_values_and_original_order (test_project.ProjectTests.test_holm_known_values_and_original_order) ... ok
+test_incomplete_or_changed_raw_evidence_is_rejected (test_project.ProjectTests.test_incomplete_or_changed_raw_evidence_is_rejected) ... ok
+test_latency_iqr_and_nonfinite_rejection (test_project.ProjectTests.test_latency_iqr_and_nonfinite_rejection) ... ok
+test_manual_review_cannot_remove_cases_or_alter_evidence (test_project.ProjectTests.test_manual_review_cannot_remove_cases_or_alter_evidence) ... ok
+test_no_statistics_on_empty (test_project.ProjectTests.test_no_statistics_on_empty) ... ok
+test_null_statistics (test_project.ProjectTests.test_null_statistics) ... ok
+test_paraphrases_and_difficulty_balanced (test_project.ProjectTests.test_paraphrases_and_difficulty_balanced) ... ok
+test_position_counterbalanced_per_fact (test_project.ProjectTests.test_position_counterbalanced_per_fact) ... ok
+test_reject_pilot_or_fixture_as_final_evidence (test_project.ProjectTests.test_reject_pilot_or_fixture_as_final_evidence) ... ok
+test_reproducible_generation (test_project.ProjectTests.test_reproducible_generation) ... ok
+test_review_selection_keeps_all_failures_when_fewer_than_thirty (test_project.ProjectTests.test_review_selection_keeps_all_failures_when_fewer_than_thirty) ... ok
+test_scoring_no_substring_shortcut (test_project.ProjectTests.test_scoring_no_substring_shortcut) ... ok
+test_strong_paired_effect (test_project.ProjectTests.test_strong_paired_effect) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.874s
+
+OK

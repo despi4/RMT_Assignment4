@@ -1,0 +1,16 @@
+{
+  "scope": "code, synthetic data, protocol and development evidence; no report",
+  "software_tests_passed": 19,
+  "real_development_calls": 63,
+  "development_errors": 0,
+  "final_test_calls_planned": 2520,
+  "final_experiment_status": "NOT RUN; protocol upload required first",
+  "original_assignment3": {
+    "rows_recomputed": 30,
+    "contrasts": 14,
+    "original_tests_passed": 12
+  },
+  "report": "EXCLUDED BY USER REQUEST",
+  "moodle_submission": "PENDING",
+  "independent_reproduction": "PENDING"
+}

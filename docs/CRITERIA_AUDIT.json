@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-11-08T15:43:41.302470+00:00",
+  "criteria": [
+    {
+      "section": "Rule 1",
+      "requirement": "Team max two",
+      "evidence": "Student names and instructor decision",
+      "status": "HUMAN CONFIRMATION"
+    },
+    {
+      "section": "Rule 2",
+      "requirement": "Original RQ aim objectives and approved design addition",
+      "evidence": "docs/CONTINUITY.md and actual approval reference",
+      "status": "PREPARED; VERIFY APPROVAL SCOPE"
+    },
+    {
+      "section": "Part 1",
+      "requirement": "Protocol fixed before final inference",
+      "evidence": "freeze/freeze.json and actual Moodle timestamp",
+      "status": "PENDING UPLOAD"
+    },
+    {
+      "section": "Part 2",
+      "requirement": "Data source version splits distribution hashes",
+      "evidence": "data/manifest.json data/facts.json",
+      "status": "IMPLEMENTED"
+    },
+    {
+      "section": "Part 2",
+      "requirement": "Two fair baselines",
+      "evidence": "closed_book and clean oracle context; same checkpoint",
+      "status": "IMPLEMENTED; ORACLE SCOPE EXPLICIT"
+    },
+    {
+      "section": "Part 2",
+      "requirement": "Hardware versions prompts seeds runtime",
+      "evidence": "config/model_lock.json and real metadata",
+      "status": "RECORDED"
+    },
+    {
+      "section": "Part 3",
+      "requirement": "Full final evaluation without selected runs",
+      "evidence": "2520 raw calls and validation",
+      "status": "PENDING REAL FINAL RUN"
+    },
+    {
+      "section": "Part 3",
+      "requirement": "Mean SD and 95 percent uncertainty",
+      "evidence": "main_results.csv",
+      "status": "CODE READY; NO FINAL RESULTS"
+    },
+    {
+      "section": "Part 3",
+      "requirement": "Statistical test statistic p Holm effect",
+      "evidence": "paired_comparisons.csv",
+      "status": "CODE READY; NO FINAL RESULTS"
+    },
+    {
+      "section": "Part 3",
+      "requirement": "Two informative figures",
+      "evidence": "accuracy and sensitivity; extra position and confusion figures",
+      "status": "CODE READY"
+    },
+    {
+      "section": "Part 4",
+      "requirement": "At least 30 actual errors or all if fewer",
+      "evidence": "error_review.csv with immutable case selection",
+      "status": "PENDING REAL ERRORS AND HUMAN CODING"
+    },
+    {
+      "section": "Part 4",
+      "requirement": "Additional sensitivity or subgroup analysis",
+      "evidence": "subgroups.csv sensitivity curve",
+      "status": "CODE READY"
+    },
+    {
+      "section": "Part 5",
+      "requirement": "Every hypothesis and objective evaluated",
+      "evidence": "hypothesis_decisions.csv plus original objective coverage matrix",
+      "status": "PENDING RESULTS"
+    },
+    {
+      "section": "Part 6",
+      "requirement": "Compare at least 3 actual Assignment 1 studies",
+      "evidence": "docs/A1_SOURCE_CHECK.csv and manually written Discussion",
+      "status": "PENDING ASSIGNMENT 1 CONFIRMATION"
+    },
+    {
+      "section": "Part 6",
+      "requirement": "Unexpected results practical implications validity limits future work",
+      "evidence": "Actual Discussion in final report",
+      "status": "SCAFFOLD ONLY"
+    },
+    {
+      "section": "Part 7",
+      "requirement": "README data access environment scripts license",
+      "evidence": "README.md requirements.txt LICENSE DATA_LICENSE",
+      "status": "PREPARED"
+    },
+    {
+      "section": "Part 7",
+      "requirement": "Independent clean-environment reproduction",
+      "evidence": "Appendix_C_Record.json and separate real logs",
+      "status": "PENDING INDEPENDENT EXECUTION"
+    },
+    {
+      "section": "Part 7",
+      "requirement": "Hosted repository and assignment-4 tag",
+      "evidence": "Real GitHub/GitLab URL and published release",
+      "status": "STUDENT PUBLICATION REQUIRED"
+    },
+    {
+      "section": "NLP track",
+      "requirement": "Full test set subgroups successes failures runtime statistics",
+      "evidence": "Main outputs success_examples.csv manual errors",
+      "status": "CODE READY; NEED REAL RESULTS"
+    },
+    {
+      "section": "Report",
+      "requirement": "1800 to 2500 words Results and Discussion",
+      "evidence": "Final completed Word report; references and appendices excluded",
+      "status": "TEMPLATE ONLY"
+    },
+    {
+      "section": "Appendices",
+      "requirement": "A protocol B error table C reproduction",
+      "evidence": "Completed real forms",
+      "status": "FORMS PREPARED; EVIDENCE PENDING"
+    },
+    {
+      "section": "Integrity",
+      "requirement": "All numbers traceable and no fabricated results",
+      "evidence": "Raw IDs hashes audit_rows.csv and source references",
+      "status": "GUARDS IMPLEMENTED; VERIFY ACTUAL SUBMISSION"
+    },
+    {
+      "section": "Defence Q1",
+      "requirement": "Explain protocol and fair setup",
+      "evidence": "docs/DEFENCE_RU.txt and actual freeze",
+      "status": "STUDENT DEFENCE REQUIRED"
+    },
+    {
+      "section": "Defence Q2",
+      "requirement": "Explain main result and statistical test",
+      "evidence": "Actual result and paired test",
+      "status": "STUDENT DEFENCE REQUIRED"
+    },
+    {
+      "section": "Defence Q3",
+      "requirement": "Explain an error and additional analysis",
+      "evidence": "Actual coded case and sensitivity result",
+      "status": "STUDENT DEFENCE REQUIRED"
+    },
+    {
+      "section": "Defence Q4",
+      "requirement": "Prior-study comparison and validity threat",
+      "evidence": "Actual Discussion",
+      "status": "STUDENT DEFENCE REQUIRED"
+    },
+    {
+      "section": "Defence Q5",
+      "requirement": "Trace any selected number to original evidence",
+      "evidence": "scripts/trace_number.py and raw logs",
+      "status": "TOOL PREPARED; STUDENT DEMONSTRATION REQUIRED"
+    },
+    {
+      "section": "Grading",
+      "requirement": "Resolve contradictory 50/50 and footer 20/80",
+      "evidence": "Instructor clarification",
+      "status": "HUMAN CONFIRMATION"
+    }
+  ],
+  "interpretation": "Statuses indicate available evidence, not awarded marks. Code readiness is not completed research."
+}

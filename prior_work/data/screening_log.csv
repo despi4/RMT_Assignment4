@@ -1,0 +1,5 @@
+study_id,source_url,screening_date,status,reason,screening_scope,publication_status
+Mallen2023,https://aclanthology.org/2023.acl-long.546/,2026-10-29,contextual,Retrieval and popularity evidence; no matched FT arm in selected comparison,source table/method audit; not an exhaustive review,Published ACL proceedings
+Ovadia2024,https://aclanthology.org/2024.emnlp-main.15/,2026-10-29,numeric and contextual,Direct UFT and RAG; baseline and paraphrase conditions,source table/method audit; not an exhaustive review,Published ACL proceedings
+Gekhman2024,https://aclanthology.org/2024.emnlp-main.444/,2026-10-29,contextual,Fine-tuning and knowledge familiarity; no matched RAG arm,source table/method audit; not an exhaustive review,Published ACL proceedings
+Yang2026,https://aclanthology.org/2026.gem-main.37/,2026-10-29,numeric and contextual,Direct UFT SFT RAG and baseline; SFT scoring differs,source table/method audit; not an exhaustive review,Published ACL proceedings

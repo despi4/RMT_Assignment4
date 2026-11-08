@@ -1,0 +1,16 @@
+__pycache__/
+.venv/
+.cache/
+*.token
+.env
+.test_tmp/
+results/pilot/
+# Keep final raw logs, freeze manifests and analysis outputs in the release.
+
+freeze/moodle_upload*
+
+# Reports and personal submission documents stay outside this code repository.
+*.docx
+*.pdf
+Assignment4_Report*
+REPORT_PLAN.md

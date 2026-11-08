@@ -1,0 +1,5 @@
+study_id,objective,evidence,source_location,status
+Mallen2023,2,"Popularity and long-tail knowledge inform category definitions; no direct FT-RAG estimate imported",Abstract and experimental results,contextual only
+Gekhman2024,1 and 5,"Familiarity and supervised FT hallucination risk; does not compare RAG",Abstract and controlled setup,contextual only
+Ovadia2024,4,"FT-par tests repeated paraphrased facts; Table 2 compared separately with FT-reg",PDF page 5 Table 2 and sections 4-5,quantitative subset extracted
+Yang2026,4 and 5,"RAG context and supervised QA have different information and scoring conditions",Sections 5.2-5.3,manual fairness assessment required

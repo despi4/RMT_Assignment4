@@ -1,0 +1,5 @@
+mechanism,knowledge_route,pilot_evidence,limitation
+Pretraining,Initial parameter acquisition,Source-provided BASE arms,Original training corpora not re-observed
+Instruction tuning,Response alignment before task intervention,Some source-provided BASE models already instruction-tuned,Not isolated as an intervention in this pilot
+Factual fine-tuning,Parameter updates via UFT or SFT,UFT and SFT arms; FT-par augmentation,SFT labels and classification head differ from RAG
+Retrieval augmentation,External text consulted at inference,RAG arms,Access does not demonstrate permanent learning in weights

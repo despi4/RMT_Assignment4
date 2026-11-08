@@ -1,0 +1,6 @@
+# Python 3.11 or 3.12. Freeze the resolved environment before final runs.
+torch>=2.4,<3
+transformers==4.57.1
+huggingface-hub>=0.34,<1
+safetensors>=0.4
+# Analysis and SVG generation use the Python standard library only.

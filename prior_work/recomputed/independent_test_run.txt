@@ -1,0 +1,18 @@
+Actual rerun of original Assignment 3 software tests. Does not verify original source cells or constitute a new model experiment.
+test_arithmetic_and_percent_units (test_pipeline.PipelineTests.test_arithmetic_and_percent_units) ... ok
+test_duplicate_configuration (test_pipeline.PipelineTests.test_duplicate_configuration) ... ok
+test_duplicate_id (test_pipeline.PipelineTests.test_duplicate_id) ... ok
+test_incompatible_pairs (test_pipeline.PipelineTests.test_incompatible_pairs) ... ok
+test_invalid_category (test_pipeline.PipelineTests.test_invalid_category) ... ok
+test_invalid_metric_and_unit (test_pipeline.PipelineTests.test_invalid_metric_and_unit) ... ok
+test_invalid_url (test_pipeline.PipelineTests.test_invalid_url) ... ok
+test_missing_column (test_pipeline.PipelineTests.test_missing_column) ... ok
+test_missing_rag_is_rejected (test_pipeline.PipelineTests.test_missing_rag_is_rejected) ... ok
+test_missing_value (test_pipeline.PipelineTests.test_missing_value) ... ok
+test_sft_is_qualified_and_negative (test_pipeline.PipelineTests.test_sft_is_qualified_and_negative) ... ok
+test_valid_data_and_output_files (test_pipeline.PipelineTests.test_valid_data_and_output_files) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.619s
+
+OK

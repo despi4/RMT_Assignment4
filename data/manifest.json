@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "dataset_seed": 2417,
+  "dev_facts": 30,
+  "test_facts": 120,
+  "dev_calls": 630,
+  "final_calls": 2520,
+  "files": {
+    "dev.jsonl": "121138c4bac1b01798387e09cbc1ee75c59d4e41309d7cd5fd525655b5a16c7a",
+    "test.jsonl": "958be00e198cf90914097b46f67ea0fd7af9f5c1bc4cc502d90a11fd7f8445d2"
+  },
+  "origin": "Programmatically created fictional stimuli, not observed LLM outcomes"
+}

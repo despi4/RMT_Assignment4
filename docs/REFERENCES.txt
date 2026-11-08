@@ -1,0 +1,29 @@
+Verified primary sources
+
+Ovadia, O., Brief, M., Mishaeli, M., & Elisha, O. (2024). Fine-Tuning or Retrieval? Comparing Knowledge Injection in LLMs. EMNLP, 237-250.
+https://aclanthology.org/2024.emnlp-main.15/
+Role: original Assignment 3 FT/RAG context. Do not treat our oracle-context experiment as a replication of all their conditions.
+
+Mallen, A., Asai, A., Zhong, V., Das, R., Khashabi, D., & Hajishirzi, H. (2023). When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories. ACL, 9802-9822.
+https://aclanthology.org/2023.acl-long.546/
+Role: external versus parametric factual access; real-world popularity differs from fictional mappings.
+
+Gekhman, Z., Yona, G., Aharoni, R., Eyal, M., Feder, A., Reichart, R., & Herzig, J. (2024). Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations? EMNLP, 7765-7784.
+https://aclanthology.org/2024.emnlp-main.444/
+Role: original Assignment 3 knowledge and hallucination mechanisms. Not directly tested by fixed-weight inference.
+
+Liu, N. F., Lin, K., Hewitt, J., Paranjape, A., Bevilacqua, M., Petroni, F., & Liang, P. (2024). Lost in the Middle: How Language Models Use Long Contexts. TACL, 12, 157-173.
+https://aclanthology.org/2024.tacl-1.9/
+Role: directly relevant position/context study; supplementary reference, not claimed to be in Assignment 1.
+
+Qwen model card
+https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
+Actual checkpoint commit will be resolved by scripts/prepare.py and stored in config/model_lock.json.
+
+Transformers documentation
+https://huggingface.co/docs/transformers/v4.57.1/en/model_doc/qwen2
+
+Assignment sources supplied locally
+Assignment_4_Experiment_Results_Discussion.docx
+Assignment3_With_Charts_Black_Text (1).docx
+See source_documents.json for original paths and digests. Original Assignment 1 and 2 remain unverified. The Assignment 3 code archive was subsequently located locally and included with provenance in prior_work.

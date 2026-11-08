@@ -1,0 +1,17 @@
+{
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "dataset_seed": 2417,
+  "dev_facts": 30,
+  "test_facts": 120,
+  "context_seeds": [17, 29, 43],
+  "conditions": ["closed_book", "clean", "irrelevant_4", "similar_4", "irrelevant_16", "similar_16", "target_absent_16"],
+  "max_new_tokens": 16,
+  "max_input_tokens": 2048,
+  "do_sample": false,
+  "bootstrap_samples": 4000,
+  "permutation_samples": 10000,
+  "analysis_seed": 7341,
+  "primary_comparison": ["similar_16", "clean"],
+  "planned_comparisons": [["similar_16", "clean"], ["clean", "closed_book"], ["similar_16", "irrelevant_16"]],
+  "system_prompt": "Answer the question using the supplied context. The countries and cities are fictional. If the context does not state the answer, output UNKNOWN. Output only the city name or UNKNOWN, with no explanation."
+}

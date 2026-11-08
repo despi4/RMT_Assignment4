@@ -1,0 +1,6 @@
+# Preserve bytes for reproducible hashes across Windows and Linux.
+* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+# Original research data and raw evidence retain their source line endings.
+data/** -whitespace
+prior_work/data/** -whitespace
+validation/** -whitespace

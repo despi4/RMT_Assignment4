@@ -1,0 +1,24 @@
+{
+  "records": 30,
+  "studies_with_numeric_results": 2,
+  "configurations": 8,
+  "ft_rag_contrasts": 14,
+  "qualified_sft_contrasts": 3,
+  "rejected_pairs": 0,
+  "methods": {
+    "BASE": 8,
+    "RAG": 8,
+    "UFT": 11,
+    "SFT": 3
+  },
+  "category_record_counts": {
+    "newly_introduced": 24,
+    "existing_seen": 6
+  },
+  "categories_without_numeric_records": [
+    "common_popular",
+    "not_specified",
+    "rare_long_tail"
+  ],
+  "input_sha256": "06960dacd7735af77da6cd5ae900ebdbdbd5ce3ccaeb65e75730af346831571d"
+}

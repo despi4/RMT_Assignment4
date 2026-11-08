@@ -1,0 +1,13 @@
+{
+  "status": "REAL DEVELOPMENT SMOKE TEST ONLY; not final study evidence",
+  "facts": 3,
+  "calls": 63,
+  "technical_errors": 0,
+  "max_input_tokens": 342,
+  "token_limit_hits": 0,
+  "median_generation_seconds": 0.7826053999888245,
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "checkpoint": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "CPU",
+  "purpose": "Verify loading tokenization generation saving and condition coverage; no final significance claims from 3 dev facts"
+}

@@ -1,0 +1,5 @@
+study_id,pdf_url,access_date,sha256,bytes
+Mallen2023,https://aclanthology.org/2023.acl-long.546.pdf,2026-10-29,b08f238c0c631e304eb0e8ea0ef59e3d18b82895e89c3619318b83d6c2e5369a,951184
+Ovadia2024,https://aclanthology.org/2024.emnlp-main.15.pdf,2026-10-29,0346defe54dbe662623a9a45d0d24ff02e1ebc8272b00f54c173ea553e9e5d93,746110
+Gekhman2024,https://aclanthology.org/2024.emnlp-main.444.pdf,2026-10-29,f082a7daff09271f1a1f2db0ecd721a56d6f0fbb83bdbcdc4032a0c40333fd1b,5324878
+Yang2026,https://aclanthology.org/2026.gem-main.37.pdf,2026-10-29,f8589aee6741a841cb0f67df2a700b3840fb5a16aefbb9c613055ed18d5ad0fe,1285700
