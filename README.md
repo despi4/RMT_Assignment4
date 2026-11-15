@@ -17,6 +17,9 @@ The analysis validates the archived responses and frozen hashes, then regenerate
 `results/final_paper/`. This is archived-output recalculation, not new inference.
 `final_tools/README.txt` maps each manuscript table/figure to its output CSV/SVG.
 The post-hoc template extractor is separate from the prespecified hypotheses.
+For the exact vector figures embedded in the paper, install
+`final_tools/requirements-figures.txt` and run
+`python final_tools/render_paper_figures.py`; see the final-tools README.
 For example, Table 2 Similar 16 is 224 correct / 360 = 62.2222%; its fact-cluster
 CI is [57.2222, 66.9444]%. See `table_1_results.csv` and the archived `raw.jsonl`.
 

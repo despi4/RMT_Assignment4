@@ -52,3 +52,19 @@ Git bundle contains a local tagged release named final. Restore with:
 The release name is the course-required packaging label, not a certification
 that author signatures or human reviews are complete.
 Journal checks are documented in final_tools/journal_evidence/README.txt.
+
+EXACT MANUSCRIPT FIGURES (OPTIONAL FORMATTING DEPENDENCY)
+
+The numerical analysis above still needs only standard Python. To recreate
+the actual vector plots embedded in the manuscript, also run:
+
+  python -m pip install -r final_tools/requirements-figures.txt
+  python final_tools/render_paper_figures.py
+
+Outputs: results/paper_figures/accuracy.pdf (Figure 1), position.pdf (Figure 2),
+and abstention.pdf (Figure 3). These use the same renderer and summary as the
+delivered manuscript. Stable PDF metadata supports byte-for-byte comparison
+with manuscript_source/figures/ in the course ZIP using ReportLab 4.4.9.
+The paper uses vector figures. PNG versions are 1960 pixels wide, over 300 dpi
+at the 6.2-inch width used in the editable manuscript. The SVG plots remain
+a dependency-free route.

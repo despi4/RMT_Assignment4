@@ -1,20 +1,14 @@
 ﻿check,status,evidence
-Journal indexing and legitimacy,YES,Official Scopus annual metrics and Active status checked; full discontinued sheet and Retraction Watch export searched. Evidence saved.
-Journal template and limit,PARTIAL,Course copy follows linked TACL 2021v1 and 10-page content limit. Style download provenance disclosed; journal submission needs anonymous copy and final author declarations.
-Numbers identical across sections,YES,"Main values generated from checked raw responses and repeated consistently in abstract, results, discussion and conclusion."
-Every numerical result traceable,YES,"Raw SHA256 checked; final_tools/analyze_public.py produces all Results tables/figures, including extractor outputs."
-Real references and journal style,PARTIAL,27 verifiable references; author reading/approval cannot be inferred. Literature reading record supplied.
-At least 25 and half recent,YES,27 references: 26 research publications plus model repository; 22 research publications are from 2023-2026.
-Explicit supported contributions,YES,"Controlled replication, separated accuracy/abstention and reproducible diagnostics; broad novelty not claimed."
-Limitations and validity threats,YES,"One model, synthetic English data, position confounding, shared distractor pools and post-hoc control disclosed."
-Data/code availability statement,YES,"Repository, archived evidence commit, licences and private exclusions recorded. Local final release provided."
-CRediT AI conflicts and ethics,PARTIAL,"AI-use and synthetic-data ethics statements included; individual CRediT, funding and conflicts need author confirmation."
-Prior ethics and consent if humans,N/A,Current experimental data are synthetic; no human-participant data collected. Human review of errors is still incomplete.
-Similarity check acceptable,NO,No university similarity report was supplied or generated. Instructor/university threshold is not known.
-Outside-team reproduction,NO,Current work recalculates archived responses. Aidyn is a listed team author; his reported rerun lacks files and is not outside-team reproduction.
-All authors approved final version,NO,No signed/explicit approval record supplied.
-Two human error raters,NO,Selected cases available; independent labels and adjudication not completed in inspected records.
-Three-student exception,NO,Permission is reported in prior documents; no instructor-authored confirmation available.
-Original topic continuity,PARTIAL,Context experiment retained and broader FT/RAG question preserved; approval for narrower empirical manuscript scope should be documented.
-Release named final,LOCAL ONLY,Prepared local Git tag/bundle; no remote release publication is claimed.
-Slides and individual defence,PREPARED,"12-slide PDF, 10-minute plan and individual-question guide supplied; live defence remains to occur."
+The manuscript follows the target journal template and word limit,YES,"Named course PDF uses TACL 2021v1, 11 pt, A4, two columns and the 10-content-page maximum. Journal review needs an anonymous copy; style provenance is disclosed in Appendix A."
+"Abstract, results, discussion, and conclusion report identical numbers",YES,"Main numbers checked against the archived responses and generated summary; percentages, denominators, intervals and paired contrasts agree."
+Every number is traceable to a log or output in the repository,YES,Raw SHA256 and all 28 frozen files verified; analysis and the public paper-figure renderer reproduce the reported numerical results and plots.
+"All references are real, read by the authors, and formatted in the journal style",NO,Existence and citation formatting checked; actual reading by the human authors is not confirmed. Complete reference_reading_record.csv.
+At least 25 references; at least half from the last 5 years,YES,27 references: 26 research publications and one model repository; 22 research publications dated 2023-2026.
+Contributions are explicit and supported by the results,YES,"Three bounded contributions: controlled replication, paired analysis and traceable diagnostics. No new general-purpose method is claimed."
+Limitations and threats to validity are discussed,YES,"One model, synthetic English data, position confounding, shared distractor pools and post-hoc control disclosed."
+Data and code availability statement is included,YES,"Repository, evidence commit, licences and private exclusions stated. The final extension remains local until the team publishes it."
+"CRediT author contributions, AI-use, conflict-of-interest, and ethics statements are included",NO,"AI assistance and synthetic-data ethics are disclosed. Actual CRediT roles, funding and competing interests require author confirmation before submission."
+Human-participant data (if any) has prior ethical approval and consent,YES,Not applicable to the present synthetic experiment: no human-participant research data were collected. This is not a claim of ethics-board approval.
+Similarity check completed and acceptable,NO,University report and applicable threshold have not been supplied.
+Main results reproduced by another person from the README,NO,Archived-output recalculation passed. No documented independent human model rerun is supplied; after-course publication requires a person outside the team.
+All authors have read and approved the final version,NO,Explicit approvals from all three authors are not available.

@@ -6,6 +6,7 @@ abstention in Qwen2.5-0.5B-Instruct under distracting synthetic context.
 - Preserves all 28 frozen source files and 2,520 original model responses.
 - Reproduces the paper's numerical Results with Python standard library only.
 - Adds a clearly post-hoc template extractor, not a new model run.
+- Provides the exact manuscript figure renderer and all 13 course checklist items.
 - Includes diagnostic tests, human-review forms and official journal checks.
 - GitHub Actions recalculates archived results; it does not repeat inference.
 
