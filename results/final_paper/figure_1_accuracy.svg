@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="435" viewBox="0 0 920 435">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;font-size:18px;fill:#172b42}</style>
+<text x="22" y="30" font-size="22">Gold-city exact-match accuracy</text>
+<line x1="230.0" y1="55" x2="230.0" y2="395" stroke="#ddd"/>
+<text x="230.0" y="420" text-anchor="middle">0%</text>
+<line x1="375.0" y1="55" x2="375.0" y2="395" stroke="#ddd"/>
+<text x="375.0" y="420" text-anchor="middle">25%</text>
+<line x1="520.0" y1="55" x2="520.0" y2="395" stroke="#ddd"/>
+<text x="520.0" y="420" text-anchor="middle">50%</text>
+<line x1="665.0" y1="55" x2="665.0" y2="395" stroke="#ddd"/>
+<text x="665.0" y="420" text-anchor="middle">75%</text>
+<line x1="810.0" y1="55" x2="810.0" y2="395" stroke="#ddd"/>
+<text x="810.0" y="420" text-anchor="middle">100%</text>
+<text x="220" y="88" text-anchor="end">clean</text>
+<rect x="230" y="65" width="575.1666666666666" height="32" fill="#306a91"/>
+<text x="820.0" y="89">99.17</text>
+<path d="M 795.5 81 H 810.0 M 795.5 74 V 88 M 810.0 74 V 88" stroke="#101010" stroke-width="2"/>
+<text x="220" y="153" text-anchor="end">irrelevant_4</text>
+<rect x="230" y="130" width="571.9444444444445" height="32" fill="#306a91"/>
+<text x="820.0" y="154">98.61</text>
+<path d="M 789.0555555555555 146 H 810.0 M 789.0555555555555 139 V 153 M 810.0 139 V 153" stroke="#101010" stroke-width="2"/>
+<text x="220" y="218" text-anchor="end">similar_4</text>
+<rect x="230" y="195" width="481.72222222222223" height="32" fill="#306a91"/>
+<text x="745.8888888888889" y="219">83.06</text>
+<path d="M 685.9444444444445 211 H 735.8888888888889 M 685.9444444444445 204 V 218 M 735.8888888888889 204 V 218" stroke="#101010" stroke-width="2"/>
+<text x="220" y="283" text-anchor="end">irrelevant_16</text>
+<rect x="230" y="260" width="570.3333333333333" height="32" fill="#306a91"/>
+<text x="820.0" y="284">98.33</text>
+<path d="M 787.4444444444445 276 H 810.0 M 787.4444444444445 269 V 283 M 810.0 269 V 283" stroke="#101010" stroke-width="2"/>
+<text x="220" y="348" text-anchor="end">similar_16</text>
+<rect x="230" y="325" width="360.88888888888886" height="32" fill="#306a91"/>
+<text x="628.2777777777778" y="349">62.22</text>
+<path d="M 561.8888888888889 341 H 618.2777777777778 M 561.8888888888889 334 V 348 M 618.2777777777778 334 V 348" stroke="#101010" stroke-width="2"/>
+</svg>

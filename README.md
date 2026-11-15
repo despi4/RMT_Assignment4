@@ -1,3 +1,51 @@
+# Final project continuation — 16 November 2026
+
+This local release extends the Assignment 4 archive into the final manuscript.
+The original 28 frozen files and raw model responses are unchanged. The original
+Assignment 4 instructions are retained below as historical/run documentation.
+
+## Reproduce the final paper's Results
+
+Use Python 3.10 or later from this repository root (standard library only):
+
+```text
+python final_tools/analyze_public.py
+python -m unittest discover -s final_tools -p "test_public.py" -v
+```
+
+The analysis validates the archived responses and frozen hashes, then regenerates
+`results/final_paper/`. This is archived-output recalculation, not new inference.
+`final_tools/README.txt` maps each manuscript table/figure to its output CSV/SVG.
+The post-hoc template extractor is separate from the prespecified hypotheses.
+For example, Table 2 Similar 16 is 224 correct / 360 = 62.2222%; its fact-cluster
+CI is [57.2222, 66.9444]%. See `table_1_results.csv` and the archived `raw.jsonl`.
+
+## Genuine independent inference
+
+Use a separate clean checkout and the original environment instructions below.
+The original `scripts/run.py --phase reproduction --run-id <unique_id>` path
+preserves original results and does not require a private Moodle receipt.
+Record the actual runner, hardware, date, checkpoint and package versions;
+analyse and compare with the original reproduction commands in this README.
+Do not call an analysis-only run a model replication or invent a human runner.
+
+## Scope and remaining confirmations
+
+This course manuscript reports a controlled synthetic context experiment with
+one fixed Qwen checkpoint; it does not evaluate fine-tuning or real retrieval.
+The broader Assignment 3 question is retained as motivation and literature
+context. The added extractor assumes the known sentence grammar and is not
+presented as a general natural-language method.
+
+`final_tools/final_readiness.csv` and the delivered Appendix B record remaining
+human approvals, reading, human error review, external replication, similarity
+and journal-indexing checks. The local `final` tag is a packaging label and
+does not certify those items as completed. No GitHub push is performed here.
+Manuscript, slides and LaTeX sources are distributed in the accompanying final
+project ZIP; original code excludes personal course documents by design.
+
+---
+
 # RMT Assignment 4
 
 Исследуем, как отвлекающие факты мешают небольшой LLM использовать новые сведения из текста. Основной вариант запуска — Windows, CPU, два потока. Обучения весов и платного API нет.

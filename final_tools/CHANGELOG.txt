@@ -1,0 +1,19 @@
+FINAL EXTENSION — 16 November 2026
+
+Base public evidence commit: 8b1f9b43c8953b4963146833d3cd0da44d7c07dc
+Frozen execution source commit: 039f7dd028b78ee08eb81af5a2296a4d8f19930c
+
+Added final_tools/analyze_public.py, public analysis tests, CSV evidence ledgers,
+final-paper numerical outputs and standalone SVG plots; prepended README route.
+No frozen source file, original test data, prompt, original model response,
+original configuration or prespecified hypothesis was changed.
+
+The deterministic exact-entity template extractor was designed after observing
+the original outcomes. It is a post-hoc diagnostic, accepts only question and
+context, and is not assigned a confirmatory p value. No new LLM inference,
+fine-tuning, learned retrieval, human error ratings or external replication
+was performed in this extension. Human declarations remain for actual authors.
+
+AI assistance: OpenAI Codex assisted code, verification, analysis and drafting.
+Authors remain responsible for checking and approving submitted content.
+Original code MIT and synthetic data CC0 remain unchanged.

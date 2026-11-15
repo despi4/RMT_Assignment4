@@ -1,0 +1,17 @@
+Final-tools checks, 16 November 2026
+3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]
+
+test_conflicting_unique_associations_abstain (test_public.DiagnosticTests.test_conflicting_unique_associations_abstain) ... ok
+test_exact_entity_not_prefix (test_public.DiagnosticTests.test_exact_entity_not_prefix) ... ok
+test_lake_relation_not_capital (test_public.DiagnosticTests.test_lake_relation_not_capital) ... ok
+test_missing_target_cannot_copy_distractor (test_public.DiagnosticTests.test_missing_target_cannot_copy_distractor) ... ok
+test_original_evidence_hash_unchanged (test_public.DiagnosticTests.test_original_evidence_hash_unchanged) ... ok
+test_result_table_matches_original_archived_table (test_public.DiagnosticTests.test_result_table_matches_original_archived_table) ... ok
+test_scoring_preserves_name_errors (test_public.DiagnosticTests.test_scoring_preserves_name_errors) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.007s
+
+OK
+
+Original suite: 26 passed; one requires torch absent in this authoring environment. This is not independent human inference replication.

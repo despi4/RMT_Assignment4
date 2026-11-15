@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="305" viewBox="0 0 920 305">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;font-size:18px;fill:#172b42}</style>
+<text x="22" y="30" font-size="22">Similar 16 position subgroups are descriptive</text>
+<line x1="230.0" y1="55" x2="230.0" y2="265" stroke="#ddd"/>
+<text x="230.0" y="290" text-anchor="middle">0%</text>
+<line x1="375.0" y1="55" x2="375.0" y2="265" stroke="#ddd"/>
+<text x="375.0" y="290" text-anchor="middle">25%</text>
+<line x1="520.0" y1="55" x2="520.0" y2="265" stroke="#ddd"/>
+<text x="520.0" y="290" text-anchor="middle">50%</text>
+<line x1="665.0" y1="55" x2="665.0" y2="265" stroke="#ddd"/>
+<text x="665.0" y="290" text-anchor="middle">75%</text>
+<line x1="810.0" y1="55" x2="810.0" y2="265" stroke="#ddd"/>
+<text x="810.0" y="290" text-anchor="middle">100%</text>
+<text x="220" y="88" text-anchor="end">first</text>
+<rect x="230" y="65" width="531.6666666666666" height="32" fill="#306a91"/>
+<text x="771.6666666666666" y="89">91.67</text>
+<text x="220" y="153" text-anchor="end">middle</text>
+<rect x="230" y="130" width="145.0" height="32" fill="#306a91"/>
+<text x="385.0" y="154">25.00</text>
+<text x="220" y="218" text-anchor="end">last</text>
+<rect x="230" y="195" width="406.0" height="32" fill="#306a91"/>
+<text x="646.0" y="219">70.00</text>
+</svg>

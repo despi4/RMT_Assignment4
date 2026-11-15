@@ -1,0 +1,19 @@
+﻿check,status,evidence
+Journal template and limit,PARTIAL,"TACL style source and formatted course copy prepared. Current style confirmation, anonymous journal copy and final author checks still required."
+Numbers identical across sections,YES,"Main values generated from checked raw responses and repeated consistently in abstract, results, discussion and conclusion."
+Every numerical result traceable,YES,"Raw SHA256 checked; final_tools/analyze_public.py produces all Results tables/figures, including extractor outputs."
+Real references and journal style,PARTIAL,27 verifiable references; author reading/approval cannot be inferred. Literature reading record supplied.
+At least 25 and half recent,YES,27 references: 26 research publications plus model repository; 22 research publications are from 2023-2026.
+Explicit supported contributions,YES,"Controlled replication, separated accuracy/abstention and reproducible diagnostics; broad novelty not claimed."
+Limitations and validity threats,YES,"One model, synthetic English data, position confounding, shared distractor pools and post-hoc control disclosed."
+Data/code availability statement,YES,"Repository, archived evidence commit, licences and private exclusions recorded. Local final release provided."
+CRediT AI conflicts and ethics,PARTIAL,"AI-use and synthetic-data ethics statements included; individual CRediT, funding and conflicts need author confirmation."
+Prior ethics and consent if humans,N/A,Current experimental data are synthetic; no human-participant data collected. Human review of errors is still incomplete.
+Similarity check acceptable,NO,No university similarity report was supplied or generated. Instructor/university threshold is not known.
+Outside-team reproduction,NO,Current work recalculates archived responses. Aidyn is a listed team author; his reported rerun lacks files and is not outside-team reproduction.
+All authors approved final version,NO,No signed/explicit approval record supplied.
+Two human error raters,NO,Selected cases available; independent labels and adjudication not completed in inspected records.
+Three-student exception,NO,Permission is reported in prior documents; no instructor-authored confirmation available.
+Original topic continuity,PARTIAL,Context experiment retained and broader FT/RAG question preserved; approval for narrower empirical manuscript scope should be documented.
+Release named final,LOCAL ONLY,Prepared local Git tag/bundle; no remote release publication is claimed.
+Slides and individual defence,PREPARED,"12-slide PDF, 10-minute plan and individual-question guide supplied; live defence remains to occur."

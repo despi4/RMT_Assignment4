@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="565" viewBox="0 0 920 565">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;font-size:18px;fill:#172b42}</style>
+<text x="22" y="30" font-size="22">Post-hoc template extractor expected-response accuracy</text>
+<line x1="230.0" y1="55" x2="230.0" y2="525" stroke="#ddd"/>
+<text x="230.0" y="550" text-anchor="middle">0%</text>
+<line x1="375.0" y1="55" x2="375.0" y2="525" stroke="#ddd"/>
+<text x="375.0" y="550" text-anchor="middle">25%</text>
+<line x1="520.0" y1="55" x2="520.0" y2="525" stroke="#ddd"/>
+<text x="520.0" y="550" text-anchor="middle">50%</text>
+<line x1="665.0" y1="55" x2="665.0" y2="525" stroke="#ddd"/>
+<text x="665.0" y="550" text-anchor="middle">75%</text>
+<line x1="810.0" y1="55" x2="810.0" y2="525" stroke="#ddd"/>
+<text x="810.0" y="550" text-anchor="middle">100%</text>
+<text x="220" y="88" text-anchor="end">closed_book</text>
+<rect x="230" y="65" width="580.0" height="32" fill="#306a91"/>
+<text x="820.0" y="89">100.00</text>
+<text x="220" y="153" text-anchor="end">clean</text>
+<rect x="230" y="130" width="580.0" height="32" fill="#306a91"/>
+<text x="820.0" y="154">100.00</text>
+<text x="220" y="218" text-anchor="end">irrelevant_4</text>
+<rect x="230" y="195" width="580.0" height="32" fill="#306a91"/>
+<text x="820.0" y="219">100.00</text>
+<text x="220" y="283" text-anchor="end">similar_4</text>
+<rect x="230" y="260" width="580.0" height="32" fill="#306a91"/>
+<text x="820.0" y="284">100.00</text>
+<text x="220" y="348" text-anchor="end">irrelevant_16</text>
+<rect x="230" y="325" width="580.0" height="32" fill="#306a91"/>
+<text x="820.0" y="349">100.00</text>
+<text x="220" y="413" text-anchor="end">similar_16</text>
+<rect x="230" y="390" width="580.0" height="32" fill="#306a91"/>
+<text x="820.0" y="414">100.00</text>
+<text x="220" y="478" text-anchor="end">target_absent_16</text>
+<rect x="230" y="455" width="580.0" height="32" fill="#306a91"/>
+<text x="820.0" y="479">100.00</text>
+</svg>
