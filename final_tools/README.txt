@@ -50,4 +50,5 @@ Git bundle contains a local tagged release named final. Restore with:
   git checkout final
 
 The release name is the course-required packaging label, not a certification
-that journal indexing checks, author signatures or human reviews are complete.
+that author signatures or human reviews are complete.
+Journal checks are documented in final_tools/journal_evidence/README.txt.

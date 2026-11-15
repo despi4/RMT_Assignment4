@@ -1,0 +1,33 @@
+ВНЕШНЯЯ ПРОВЕРКА МОДЕЛЬНОГО ЭКСПЕРИМЕНТА
+Передайте этот файл человеку, который не входит в список авторов.
+Условия: Python 3.12, интернет для установки и весов, достаточное место для
+окружения и модели (~1 ГБ весов). Исходный запуск был Windows/CPU/2 потока.
+Время повтора заранее не обещается. Иное железо/ОС/версии честно запишите.
+
+1. Получите независимую копию final.bundle или опубликованного final release.
+Не работайте поверх папки основного автора. После clone выполните:
+git checkout final
+git rev-parse HEAD
+Сохраните напечатанный commit.
+
+2. Следуйте исходному README, раздел «Независимое воспроизведение».
+Команды из корня новой копии в PowerShell:
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --extra-index-url https://download.pytorch.org/whl/cpu -r environment.lock.txt
+.\.venv\Scripts\python.exe scripts/run.py --phase reproduction --run-id external_final_1
+.\.venv\Scripts\python.exe scripts/analyze.py --reproduction-id external_final_1
+.\.venv\Scripts\python.exe scripts/compare_reproduction.py --run-id external_final_1 --person "ВАШЕ НАСТОЯЩЕЕ ИМЯ" --commit "COMMIT ИЗ ШАГА 1" --notes "ФАКТИЧЕСКАЯ СРЕДА И ПРОБЛЕМЫ"
+
+Замените значения в кавычках перед последней командой. Для нового полного
+повтора задайте новый run-id. При отсутствии точной версии пакета не подменяйте
+её молча: запишите проблему и согласуйте среду. Новый freeze и Moodle receipt
+для режима reproduction не нужны. Не запускайте prepare/freeze поверх архива.
+
+3. Верните всю папку results/reproduction/external_final_1/ с raw.jsonl,
+metadata.json, анализом и Appendix_C_Record.json. Дополнительно запишите
+настоящие дату, имя, железо, команды и замечания к README. Различия результатов
+не прячьте; сравнение времени не ожидается побайтово одинаковым.
+
+Проверка личности и независимости не автоматизируется. Команда сохраняет
+реальное подтверждение исполнителя. Пересчёт final_tools/analyze_public.py
+проверяет уже сохранённые ответы и не заменяет этот запуск.

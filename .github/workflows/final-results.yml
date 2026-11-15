@@ -1,0 +1,26 @@
+name: Verify final paper results
+on:
+  push:
+    branches: [main]
+    tags: [final]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  archived-results:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Recalculate archived responses and validate frozen hashes
+        run: python final_tools/analyze_public.py
+      - name: Check diagnostic behavior and agreement with archived analysis
+        run: python -m unittest discover -s final_tools -p "test_public.py" -v
+      - name: Verify exact generated files
+        run: git diff --exit-code -- results/final_paper

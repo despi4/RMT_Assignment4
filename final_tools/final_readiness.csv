@@ -1,5 +1,6 @@
 ﻿check,status,evidence
-Journal template and limit,PARTIAL,"TACL style source and formatted course copy prepared. Current style confirmation, anonymous journal copy and final author checks still required."
+Journal indexing and legitimacy,YES,Official Scopus annual metrics and Active status checked; full discontinued sheet and Retraction Watch export searched. Evidence saved.
+Journal template and limit,PARTIAL,Course copy follows linked TACL 2021v1 and 10-page content limit. Style download provenance disclosed; journal submission needs anonymous copy and final author declarations.
 Numbers identical across sections,YES,"Main values generated from checked raw responses and repeated consistently in abstract, results, discussion and conclusion."
 Every numerical result traceable,YES,"Raw SHA256 checked; final_tools/analyze_public.py produces all Results tables/figures, including extractor outputs."
 Real references and journal style,PARTIAL,27 verifiable references; author reading/approval cannot be inferred. Literature reading record supplied.

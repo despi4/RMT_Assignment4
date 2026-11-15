@@ -39,8 +39,10 @@ presented as a general natural-language method.
 
 `final_tools/final_readiness.csv` and the delivered Appendix B record remaining
 human approvals, reading, human error review, external replication, similarity
-and journal-indexing checks. The local `final` tag is a packaging label and
-does not certify those items as completed. No GitHub push is performed here.
+and the final public release. Journal verification is complete as of 2026-11-16;
+see `final_tools/journal_evidence/README.txt`. The local `final` tag is a packaging label and
+does not certify those items as completed. No GitHub push is performed here. See `GITHUB_RELEASE_RU.md` for the exact
+publication procedure and `RELEASE_NOTES.md` for ready-to-copy release notes.
 Manuscript, slides and LaTeX sources are distributed in the accompanying final
 project ZIP; original code excludes personal course documents by design.
 

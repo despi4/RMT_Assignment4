@@ -1,0 +1,24 @@
+AUTHOR CONFIRMATION FORM — complete only with real information
+No approvals or roles have been inferred from names.
+
+For each author (Madiuly Almadi; Aibek Galymbekov; Aidyn Zhubanyshev):
+Name:
+Actual CRediT roles and concrete work performed:
+Manuscript version/commit read:
+Sources read and checked (see reference_reading_record.csv):
+Funding (or confirmed none):
+Competing interests (or confirmed none):
+Approval of author list and final text (yes/no, date):
+Permission to publish approved code/results on GitHub (yes/no, date):
+
+Team record:
+Exact Moodle deadline:
+Evidence for three-person team exception:
+Instructor approval of scope and journal fit:
+Corresponding author for an eventual journal submission:
+University similarity check completed/date/status:
+Outside-team reproduction evidence location:
+
+Keep private approval messages, email addresses and university reports out
+of the public repository. Publish only the agreed contribution/declaration
+text; update the manuscript and checklist after actual completion.

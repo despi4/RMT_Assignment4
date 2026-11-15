@@ -1,0 +1,26 @@
+{
+  "checked": "2026-11-16",
+  "rows": 488,
+  "header": [
+    "First created: May 30, 2022; last updated November 9, 2026",
+    "The Retraction Watch Hijacked Journal Checker will be frequently updated, and requires resources. Would you consider a U.S. tax-deductible donation to help us sustain it?",
+    "For more information, see this post.\n If you have a journal for consideration, please submit it using this form.",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "queries": [
+    "2307387X",
+    "03064573",
+    "18735371",
+    "transactions of the association for computational linguistics",
+    "information processing and management",
+    "information processing & management"
+  ],
+  "matches": [],
+  "source": "https://retractionwatch.com/the-retraction-watch-hijacked-journal-checker/",
+  "csv_url": "https://docs.google.com/spreadsheets/d/1ak985WGOgGbJRJbZFanoktAN_UFeExpE/export?format=csv",
+  "sha256": "76c13803b7a970aff829a53404940f3a31e380e34413929f6f35e31a5a827f45",
+  "interpretation": "No listed match found in this snapshot. Absence is not a guarantee against all impersonation."
+}
