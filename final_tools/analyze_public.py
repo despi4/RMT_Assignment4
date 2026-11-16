@@ -13,6 +13,7 @@ import re
 import statistics
 import string
 import unicodedata
+from math import fsum
 from collections import defaultdict, Counter
 from pathlib import Path
 
@@ -110,8 +111,9 @@ def run(out):
         for r in rows:
             if r['condition'] in [a,b]:paired[r['fact_id']].setdefault(r['condition'],[]).append(exact(r['answer'],r['city']))
         dif=[statistics.mean(v[a])-statistics.mean(v[b]) for v in paired.values()];rr=random.Random(7341+i);n=len(dif);observed=statistics.mean(dif)
-        boots=[sum(rr.choice(dif) for _ in range(n))/n for _ in range(4000)]
-        extreme=sum(abs(sum(d*rr.choice([-1,1]) for d in dif)/n)>=abs(observed)-1e-12 for _ in range(10000))
+        # Python 3.12 changed floating-point sum(); use the same accurate sum on all versions.
+        boots=[fsum(rr.choice(dif) for _ in range(n))/n for _ in range(4000)]
+        extreme=sum(abs(fsum(d*rr.choice([-1,1]) for d in dif)/n)>=abs(observed)-1e-12 for _ in range(10000))
         contrasts.append(dict(hypothesis='H'+str(i+1),a=a,b=b,delta_pp=100*observed,ci_low_pp=100*percentile(boots,.025),ci_high_pp=100*percentile(boots,.975),p_raw=(extreme+1)/10001))
     previous=0
     for rank,i in enumerate(sorted(range(3),key=lambda i:contrasts[i]['p_raw'])):
